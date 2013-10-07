@@ -1,1 +1,68 @@
-/* css */
+/*reset*/
+body,a,p,h1,h2,h3,h4,h5,ul,li {
+	margin: 0;
+	padding: 0;
+}
+
+/*=======================================================*/
+/*Basic style*/
+a {
+	text-decoration: none;
+}
+.clearfix {
+	clear: both;
+}
+
+/*=======================================================*/
+/*page wraper*/
+#wraper{
+	margin: 10px auto;
+}
+
+/*=======================================================*/
+/*header section*/
+#header ul{
+	list-style: none;
+}
+#header ul li {
+	float: left;
+}
+
+#header .topHeader {
+	width: 960px;
+	margin: 0 auto;
+}
+	/*inside header property for topHeader only*/
+	.topHeader .logo {
+		float: left;
+		margin-left: 10px;
+	}
+	.topHeader .userNav {
+		float: right;
+	}
+	.nav li {
+		padding: 0 10px;
+	}
+	.nav li:first-child {
+		border-right: 1px solid #3355aa;
+	}
+	.nav a {
+		color: #3355aa;
+	}
+	/*inside header property for baseHeader only*/
+	.baseHeader {
+		background-color: #3355aa;
+		width: 100%
+	}
+		#navigation {
+			width: 960px;
+			margin: 0 auto;
+		}
+		#navigation li {
+			padding:10px 20px 10px 10px;
+		}
+		#navigation li a{
+			color: #FFF;
+			font-style: italic;
+			text-shadow:1px 1px 2px #000;
+		}
