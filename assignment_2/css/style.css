@@ -136,6 +136,9 @@ h2 {
 	.announcements h2 {
 		margin-bottom: 15px;
 	}
+	.announcements p {
+		color: #414040;
+	}
 	p.titleReadMore {
 		font-style: italic;
 		font-size: 11px;
