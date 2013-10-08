@@ -1,0 +1,258 @@
+/*reset*/
+body,a,p,h1,h2,h3,h4,h5,ul,li,span,strong {
+	margin: 0;
+	padding: 0;
+}
+
+/*=======================================================*/
+/*Basic style*/
+a{
+	font-family: georgia;
+	text-decoration: none;
+	color: #3355aa;
+	font-size: 15px;	
+}
+a:hover{
+	color: #3355aa;
+}
+ a.line:hover {
+	text-decoration: underline;
+}
+.clearfix {
+	clear: both;
+}
+h3,body {
+	font-family: Arial;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 13px;
+}
+p {
+	color: #7a7a7a;
+	font-family: georgia;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+/*=======================================================*/
+/*page wraper*/
+#wraper{
+	margin: 0 auto;
+}
+
+/*=======================================================*/
+/*header section*/
+#header {
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+#header ul{
+	list-style: none;
+}
+#header ul li {
+	float: left;
+}
+
+#header .topHeader {
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+	/*inside header property for topHeader only*/
+	.topHeader a.logo {
+		overflow: hidden;
+		float: left;
+		text-indent: 10000px;
+		background: url('../images/logo.jpg') no-repeat;
+		height: 60px;
+		width: 240px;
+	}
+	.topHeader ul.userNav {
+		float: right;
+		font-size: 15px;
+	}
+	ul.userNav li{
+		padding: 0 10px;
+	}
+	ul.userNav li:first-child {
+		border-right: 1px solid #3355aa;
+	}
+	ul.userNav li:last-child {
+		padding-right: 0;
+	}
+	ul.userNav li a {
+		color: #3355aa;
+	}
+	/*inside header property for baseHeader only*/
+	.baseHeader {
+		background-color: #3355aa;
+	}
+		ul#navigation {
+			overflow: hidden;
+			width: 940px;
+			margin: 0 auto;
+		}
+		ul#navigation li {
+			padding:10px 0;
+		}
+		ul#navigation li a{
+			color: #FFF;
+			padding:10px;
+			font-style: italic;
+			text-shadow:1px 1px 2px #000;
+			transition: all 1s;
+			-moz-transition: all 1s;
+		}
+		ul#navigation li a:hover {
+			background: #000;
+			color: ##3355aa;
+			text-decoration: none;
+		}
+
+/*=======================================================*/
+/*page content*/
+#content {
+	width: 940px;
+	margin: 0 auto;
+
+}
+/*separate*/
+.separate {
+	background: url('../images/separate.jpg');
+	height: 20px;
+	margin-bottom: 45px;
+}
+	/*slider, what we do and announcements are wrapped inside class fold starts*/
+	.fold {
+		margin-bottom: 70px;
+	}
+	.getToKnow {
+		float: left;
+		width: 480px;
+	}
+	.getToKnow h3 {
+		color: #666;
+		text-transform: uppercase;
+		padding: 20px 0 10px 0;
+		border-bottom: 3px solid #eebe00;
+	}
+	#slider {
+		box-shadow: 0 0 3px #666;
+		border-radius: 5px;
+		width: 420px;
+		height: 340px;
+		float: left;
+		margin-right: 40px;
+	}
+	#slider img {
+		padding: 10px;
+	}
+	h3.activeHeading {
+		margin-top: 10px;
+		color: #3355aa;
+	}
+	.getToKnow .whatWeDo, .getToKnow .announcements {
+		width: 45.5%;
+		float: left;
+	}
+	.getToKnow .whatWeDo {
+		margin-right: 40px;
+	}
+	.announcements h3 {
+		margin-bottom: 5px;
+	}
+	.announcements a.readMore{
+		font-style: italic;
+		font-weight: bold;
+	}
+	.announcements ul {
+		list-style: none;
+	}
+	.announcements ul li a {
+		display: block;
+		color: #414040;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 12px;
+	}
+	.announcements ul li a:hover {
+		color: #3355aa;
+	}
+	.announcements ul li.titleReadMore {
+		border-bottom: 1px dotted #7a7a7a;
+		padding: 15px 0;
+	}
+	.announcements ul li:first-child.titleReadMore {
+		padding-top: 10px;
+	}
+	.announcements ul li.titleReadMore .title {
+		margin-bottom: 5px;
+	}
+	.announcements ul li span.publisher {
+		display: block;
+		color: #7a7a7a;
+		font-size: 9px;
+	}
+	.announcements ul li span.publisher a {
+		display: inline-block;
+		font-size: 10px;
+	}
+	.announcements ul li:last-child{
+		border: none;
+		margin-bottom: 15px;
+	}
+	/*fold ends*/
+
+	/*sectors we work starts*/
+	.workSector {
+		margin: 0 auto;
+		width: 940px;
+		margin-bottom: 40px;
+	}
+	.workSector ul li a {
+		display: block;
+		padding: 5px;
+	}
+	.workSector h2 {
+		color: #444444;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.workSector ul {
+		float: left;
+		list-style: none;
+	}
+	.workSector ul li {
+		float: left;
+		width: 175px;
+		box-shadow: 0 0 5px #666;
+		margin-right: 15px;
+		border-radius: 5px;
+	}
+	.workSector ul li:first-child {
+		margin-left: 0;
+	}
+	.workSector ul li:last-child {
+		margin-right: 0;
+	}
+	.workSector ul li a h4 {
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 18px;
+	}
+	.workSector ul li:last-child a h4 {
+		line-height: 32px;
+	}
+	.workSector ul li a img {
+		.padding: 5px;
+		width: 164px;
+		.height: 200px;
+	}
+	/*workSector ends*/
