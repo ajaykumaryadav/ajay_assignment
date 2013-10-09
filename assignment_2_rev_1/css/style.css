@@ -236,9 +236,6 @@ p {
 		margin-right: 15px;
 		border-radius: 5px;
 	}
-	.workSector ul li:first-child {
-		margin-left: 0;
-	}
 	.workSector ul li:last-child {
 		margin-right: 0;
 	}
