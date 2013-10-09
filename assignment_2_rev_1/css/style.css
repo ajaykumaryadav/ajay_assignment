@@ -3,36 +3,48 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 /*=======================================================*/
 /*Basic style*/
+body {
+	font-family: georgia,arial;
+}
 a{
-	font-family: georgia;
 	text-decoration: none;
 	color: #3355aa;
 	font-size: 15px;	
 }
 a:hover{
-	color: #3355aa;
+	text-shadow:1px 1px 1px #3355aa;
 }
- a.line:hover {
+a.active {
+	color: #FFF !important;
+}
+a.line:hover {
 	text-decoration: underline;
 }
 .clearfix {
 	clear: both;
 }
-h3,body {
-	font-family: Arial;
+h1,h2,h3 {
+	font-family: Myriad Pro,Arial;
+	color: #7a7a7a;
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+h1 {
+	text-align: center;
+	font-size: 28px;
 }
 h2 {
-	font-size: 28px;
+	font-size: 22px;
 }
 h3 {
 	font-size: 16px;
 }
 h4 {
 	font-size: 13px;
+	font-weight: bold;
 }
 p {
 	color: #7a7a7a;
-	font-family: georgia;
 	margin-top: 15px;
 	font-size: 15px;
 }
@@ -103,12 +115,11 @@ p {
 			padding:10px;
 			font-style: italic;
 			text-shadow:1px 1px 2px #000;
-			transition: all 1s;
-			-moz-transition: all 1s;
+			transition: all 0.5s;
+			-moz-transition: all 0.5s;
 		}
 		ul#navigation li a:hover {
-			background: #000;
-			color: ##3355aa;
+			background: #10214e;
 			text-decoration: none;
 		}
 
@@ -123,7 +134,7 @@ p {
 .separate {
 	background: url('../images/separate.jpg');
 	height: 20px;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 	/*slider, what we do and announcements are wrapped inside class fold starts*/
 	.fold {
@@ -136,7 +147,8 @@ p {
 	.getToKnow h3 {
 		color: #666;
 		text-transform: uppercase;
-		padding: 20px 0 10px 0;
+		letter-spacing: 2px;
+		padding: 25px 0 10px 0;
 		border-bottom: 3px solid #eebe00;
 	}
 	#slider {
@@ -151,7 +163,6 @@ p {
 		padding: 10px;
 	}
 	h3.activeHeading {
-		margin-top: 10px;
 		color: #3355aa;
 	}
 	.getToKnow .whatWeDo, .getToKnow .announcements {
@@ -183,13 +194,14 @@ p {
 	}
 	.announcements ul li.titleReadMore {
 		border-bottom: 1px dotted #7a7a7a;
-		padding: 15px 0;
+		padding: 5px 0;
 	}
 	.announcements ul li:first-child.titleReadMore {
 		padding-top: 10px;
 	}
 	.announcements ul li.titleReadMore .title {
-		margin-bottom: 5px;
+		margin-bottom: 7px;
+		line-height: 21px;
 	}
 	.announcements ul li span.publisher {
 		display: block;
@@ -216,15 +228,14 @@ p {
 		display: block;
 		padding: 5px;
 	}
-	.workSector h2 {
-		color: #444444;
-		text-transform: uppercase;
-		text-align: center;
-		margin-bottom: 30px;
+	.workSector h1 {
+		margin-bottom: 25px;
+		letter-spacing: 3px;
 	}
 	.workSector ul {
-		float: left;
 		list-style: none;
+		overflow:visible;
+		float: left;
 	}
 	.workSector ul li {
 		float: left;
@@ -232,21 +243,119 @@ p {
 		box-shadow: 0 0 5px #666;
 		margin-right: 15px;
 		border-radius: 5px;
+		transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+	.workSector ul li:hover {
+		box-shadow: 0 0 5px #000;
 	}
 	.workSector ul li:last-child {
 		margin-right: 0;
 	}
 	.workSector ul li a h4 {
 		text-align: center;
-		margin-top: 15px;
-		margin-bottom: 18px;
+		margin: 8px 0;
 	}
 	.workSector ul li:last-child a h4 {
 		line-height: 32px;
 	}
-	.workSector ul li a img {
-		.padding: 5px;
-		width: 164px;
-		.height: 200px;
-	}
 	/*workSector ends*/
+
+	/*weWork start*/
+	.weWork {
+		width: 940px;
+		margin: 0 auto;
+	}
+	.weWork h3 {
+		font-family: georgia;
+		letter-spacing: -0.5px;
+		margin: 0 auto;
+		width: 650px;
+		text-transform: none;
+		text-align: center;
+		margin-bottom: 28px;
+	}
+	.weWork .weWorkMap {
+		background: url('../images/weWorkMap.png');
+		width: 940px;
+		height: 370px;
+		margin-bottom: 14px;
+	}
+	.weWork a.clickTop {
+		overflow: hidden;
+		float: right;
+		text-indent: 10000px;
+		background:url('../images/clickTop.png') 5px 8px no-repeat;
+		width: 60px;
+		height: 28px;
+		box-shadow: 0 -1px 5px #666;
+		border-radius: 5px 5px 0 0;
+	}
+/*=======================================================*/
+/*page content end*/
+
+/*=======================================================*/
+/*Footer starts*/
+#footer {
+	background: url('../images/footerBack.png');
+	min-height: 105px;
+	/*margin-top: -15px;*/
+}
+ul {
+	overflow: hidden;
+}
+#footer a {
+	color: #7a7a7a;
+	font-size: 14px;
+}
+#footer a:hover {
+	color: #FFF;
+	text-shadow:1px 1px 1px #706f6f;
+}
+#footer li {
+	color: #666666;
+	font-size: 12px;
+}
+#footer ul.termsPrivacy li:last-child {
+	margin-right: 0;
+}
+	#footer .topFooter, #footer .baseFooter {
+		width: 940px;
+		margin: 0 auto;
+	}
+	#footer .topFooter {
+		border-bottom: 1px solid #3d3d3d;
+	}
+	a.copyRight, #footer ul li{
+		padding: 10px 5px 10px 0;
+	}	
+	ul.footerNav {
+		float: left;
+	}
+	#footer ul li.lastChild,a.lastChild,li.firstChild {
+		margin-right: 0;
+		padding-right: 0;
+	}
+	li.firstChild {
+		margin-right: 0;
+		padding-right: 0;
+	}
+	#footer .topFooter ul li a{
+		margin-right: 5px;
+	}
+	.topFooter ul.footerNav li{
+		float: left;
+	}
+	.topFooter ul.termsPrivacy li{
+		float: right;
+	}
+	.baseFooter {
+		border-top: 1px solid #222222;
+	}
+	.baseFooter a.copyRight {
+		float: left;
+	}
+	.baseFooter ul.followus li{
+		float: right;
+	}
+	/*=======================================================*/
