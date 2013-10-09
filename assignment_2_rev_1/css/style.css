@@ -301,6 +301,10 @@ p {
 	min-height: 105px;
 	/*margin-top: -15px;*/
 }
+#footer .footerTopShadow {
+	box-shadow: 0 2px 5px #000;
+	height: 1px;
+}
 ul {
 	overflow: hidden;
 }
@@ -308,13 +312,16 @@ ul {
 	color: #7a7a7a;
 	font-size: 14px;
 }
+#footer .termsPrivacy a{
+	font-size: 12px;
+}
 #footer a:hover {
 	color: #FFF;
 	text-shadow:1px 1px 1px #706f6f;
 }
 #footer li {
 	color: #666666;
-	font-size: 12px;
+	font-size: 11px;
 }
 #footer ul.termsPrivacy li:last-child {
 	margin-right: 0;
