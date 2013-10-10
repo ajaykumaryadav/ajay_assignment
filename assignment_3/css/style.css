@@ -1,0 +1,110 @@
+/* css */
+
+/*tags reset*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../font/roboto-bold-webfont.eot');
+    src: url('../font/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-bold-webfont.woff') format('woff'),
+         url('../font/roboto-bold-webfont.ttf') format('truetype'),
+         url('../font/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*basic properties*/
+body {
+	font-family: arial;
+	background: #f3f3f3;
+}
+a {
+	text-decoration: none;
+	color: #666666;
+}
+a.active {
+	color: #444444;
+}
+a:hover {
+	color: #444444;
+}
+span.summary {
+	color: #888888;
+}
+h1 {
+	font-size: 24px;
+}
+.clearFix {
+	clear: both;
+}
+/*header*/
+#header {
+	background: #FFF;
+	box-shadow: 0 0 5px #bbb7b7;
+}
+	.headerWrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+	.headerWrapper a.logo {
+		margin-top: 5px;
+		text-indent: -1000000px;
+		background: url('../images/logo.png') no-repeat;
+		width: 150px;
+		height: 45px;
+		float: left;
+	}
+	.headerWrapper ul.topNav,
+	.headerWrapper ul.baseNav {
+		float: right;
+	}
+	.headerWrapper ul.topNav {
+		margin-top: 5px;
+		margin-bottom: 13px;
+	}
+	.headerWrapper ul.baseNav {
+		margin-bottom: 9px;
+	}
+	.headerWrapper ul.topNav li,
+	.headerWrapper ul.baseNav li {
+		float: left;
+		font-size: 12px;
+	}
+	.headerWrapper ul.topNav li {
+		border-right: 1px solid #aaaaaa;
+		margin-right: 7px;
+	}
+	.headerWrapper ul.topNav li a {
+		font-size: 12px;
+		margin-right: 7px;
+		color: #444444;
+	}
+	.headerWrapper ul.topNav li:nth-child(3),
+	.headerWrapper ul.topNav li a.logout {
+		margin-right: 0;
+	}
+	.headerWrapper ul.topNav li:nth-child(3) {
+		border-right: none;
+	}
+	.headerWrapper ul.topNav li.clearLi {
+		float: none;
+		border-right: none;
+	}
+	.clearTopNav {
+		clear: right;
+	}
+	.headerWrapper ul.baseNav li {
+		margin-right: 25px;
+	}
+	.headerWrapper ul.baseNav li a {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-family: robotobold;
+	}
+	.headerWrapper ul.baseNav li:last-child, 
+	.headerWrapper ul.baseNav li:nth-child(5) {
+		margin-right: 0;
+	}
