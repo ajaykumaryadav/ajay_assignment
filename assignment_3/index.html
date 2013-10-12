@@ -1,9 +1,8 @@
 <!DOCTYPE html>
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        
         <title>Langmart Provider Profile View - Assignment</title>
-        <link type="text/css" href="css/style.css" rel="stylesheet">
+        <link type="text/css" href="css/style.css" rel="stylesheet" />
     </head>
     <body>
     	<div id="wrapper">
@@ -125,7 +124,7 @@
 										<li><span>October 2008 - October 2009 (1 year)</span></li>
 									</ul>
 								</li>
-								<li class="eduSummary">
+								<li class="eduSummary blockSummary">
 									<ul>
 										<li><h2>University of wales</h2></li>
 										<li><h4>Certification in French expert</h4></li>
@@ -146,20 +145,97 @@
 								<div class="clearFix"></div>
 							</div>
 							<div class="clearFix"></div>
-							<div class="usersReviews">
-								<div class="user">
-									<a href="#" class="userProfile">adam dam</a>
-									<div class="working">
-										<a href="#" class="userName">Adam dam</a>
-										<span><a href="#">Ceo</a></span>
-										<span><a href="#">Century Fox</a></span>
-									</div>
-								</div>										
-								<div class="reviewsUsersComments">
-									<h3>Adam rates Monika At</h3>
-									<span>Monika has been a dynamic student and always ready to take is new innovative steps...<a href="#">More</a></span>
-								</div>
-							</div>
+
+							<ul class="usersReviews">
+								<li class="review blockSummary">
+									<ul class="user">
+										<li>
+											<a href="#" class="userProfilePic">Adam Dam</a>
+											<a href="#" class="userName">adam dam</a>
+										</li>
+										<li class="company">
+											<a href="#">
+											<ul>
+												<li>Ceo</li>
+												<li>Century Fox</li>
+											</ul>
+											</a>			
+										</li>
+									</ul>
+									<ul class="userReviewComment">
+										<li>
+											<h3>Adam rates Monika At</h3>
+											<span>Monika has been a dynamic student and always ready to take is new innovative steps...<a href="#">More</a></span>
+										</li>
+									</ul>
+								</li>
+								<li class="review blockSummary removeMarginRgt">
+									<ul class="user">
+										<li>
+											<a href="#" class="userProfilePic">Adam Dam</a>
+											<a href="#" class="userName">adam dam</a>
+										</li>
+										<li class="company">
+											<a href="#">
+											<ul>
+												<li>Ceo</li>
+												<li>Century Fox</li>
+											</ul>
+											</a>			
+										</li>
+									</ul>
+									<ul class="userReviewComment">
+										<li>
+											<h3>Adam rates Monika At</h3>
+											<span>Monika has been a dynamic student and always ready to take is new innovative steps...<a href="#">More</a></span>
+										</li>
+									</ul>
+								</li>
+								<li class="review blockSummary">
+									<ul class="user">
+										<li>
+											<a href="#" class="userProfilePic">Adam Dam</a>
+											<a href="#" class="userName">adam dam</a>
+										</li>
+										<li class="company">
+											<a href="#">
+											<ul>
+												<li>Ceo</li>
+												<li>Century Fox</li>
+											</ul>
+											</a>			
+										</li>
+									</ul>
+									<ul class="userReviewComment">
+										<li>
+											<h3>Adam rates Monika At</h3>
+											<span>Monika has been a dynamic student and always ready to take is new innovative steps...<a href="#">More</a></span>
+										</li>
+									</ul>
+								</li>
+								<li class="review blockSummary removeMarginRgt">
+									<ul class="user">
+										<li>
+											<a href="#" class="userProfilePic">Adam Dam</a>
+											<a href="#" class="userName">adam dam</a>
+										</li>
+										<li class="company">
+											<a href="#">
+											<ul>
+												<li>Ceo</li>
+												<li>Century Fox</li>
+											</ul>
+											</a>			
+										</li>
+									</ul>
+									<ul class="userReviewComment">
+										<li>
+											<h3>Adam rates Monika At</h3>
+											<span>Monika has been a dynamic student and always ready to take is new innovative steps...<a href="#">More</a></span>
+										</li>
+									</ul>
+								</li>																								
+							</ul>	
 						</div>
 						<!--reviews end-->
 					</div>
@@ -169,47 +245,71 @@
 
 
 
-
 				<!--message board-->
 				<div id="messages">
-					<h1>Messages</h1>
-					<span>NEW!<strong>2</strong></span>
-					<h5>Today</h5>
+					<div class="headMessage">
+						<h2>Messages</h2>
+						<h5 class="newMsg">New! <em> 2 </em></h5>
+						<div class="clearFix"></div>
+						<h5 class="day">Today</h5>
+					</div>
+					<div class="msgSepratorLine"></div>
 					<ul class="inbox">
 						<li>
-							<a href="#">John Galt</a>
+							<a href="#" class="user">
+								<span class="userProfilePic user1ProfilePic"></span>
+								<span class="name">John Galt</span>
+								<div class="clearFix"></div>
+							</a>
+						</li>
+						<li class="msg">
 							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
-							<span>2 mins ago</span>
+							<span class="timeAgo">2 mins ago</span>
 						</li>
 						<li>
-							<a href="#">Jenny Smith</a>
+							<a href="#" class="user">
+								<span class="userProfilePic user2ProfilePic"></span>
+								<span class="name">Jenny</span>
+								<div class="clearFix"></div>
+							</a>
+						</li>
+						<li class="msg">
 							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
-							<span>2 hrs ago</span>
+							<span class="timeAgo">45 mins ago</span>
+						</li>
+						<li class="date">
+							<h5>2 days ago</h5>
+						</li>
+						<li class="msgSepratorLine"></li>
+						<li>
+							<a href="#" class="user">
+								<span class="userProfilePic user3ProfilePic"></span>
+								<span class="name">Mike</span>
+								<div class="clearFix"></div>
+							</a>
+						</li>
+						<li class="msg">
+							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
+							<span class="timeAgo">13 oct 2013</span>
 						</li>
 						<li>
-							<a href="#">Mike Wastson</a>
-							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
-							<span>2 days ago</span>
+							<a href="#" class="user">
+								<span class="userProfilePic user4ProfilePic"></span>
+								<span class="name">Natasha</span>
+								<div class="clearFix"></div>
+							</a>
 						</li>
-						<li>
-							<a href="#">John Galt</a>
+						<li class="msg">
 							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
-							<span>3 days ago</span>
-						</li>
-						<li>
-							<a href="#">Jenny Smith</a>
-							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
-							<span>4 days ago</span>
-						</li>
-						<li>
-							<a href="#">Mike Wastson</a>
-							<a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</a>
-							<span>10 days ago</span>
+							<span class="timeAgo">13 oct 2013</span>
 						</li>
 					</ul>
 					<!--inbox ends-->
+
 				</div>
 				<!--messages ends-->
+
+				<div class="clearFix"></div>
 			</div>
 			<!--content ends-->
 					<div class="clearFix"></div>
