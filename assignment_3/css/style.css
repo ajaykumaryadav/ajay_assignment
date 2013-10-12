@@ -1,5 +1,4 @@
 /* css */
-
 /*tags reset*/
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
@@ -56,6 +55,10 @@ h4 {
     font-size: 11px;
     color: #aaaaaa;
     line-height: 20px;
+}
+h5 {
+    font-size: 11px;
+    color: #666666;
 }
 .clearFix {
 	clear: both;
@@ -164,13 +167,18 @@ h4 {
     #content {
         width: 960px;
         margin: 0 auto;
-        background: #FFF;
         border-radius: 5px;
+        margin-bottom: 25px;
+        background: #fbfbfb;
+        box-shadow: 0 0 5px #666;
     }
     #profile {
+        background: #FFF;        
         width: 680px;
         float: left;
-        border-right: 2px solid #CCC;
+        box-shadow: 3px 0 5px #e0dfdf;
+        margin-right: 15px;
+        .border-right: 2px solid #CCC;
     }
     #profile .basicInfo {
     	background: #444444;
@@ -188,7 +196,7 @@ h4 {
     	/* width, height and radius have to change*/
         height: 100px;
         width: 100px;
-        border-radius: 50px;
+        border-radius: 100px;
     	border: 5px solid #2f2f2f;
     	margin-bottom: 20px;
     }
@@ -436,33 +444,223 @@ h4 {
         float: right;
         line-height: 40px;
     }
-    .usersReviews .user {
-        border: 1px solid red;
-        padding: 10px;
+    ul.usersReviews {
+        float: left;
+        .margin-right: 10px;
+        .margin-bottom: 10px;
     }
-    .usersReviews .user a.userProfile {
+    ul.usersReviews li.review {
+        width: 290px;
+        margin-right: 10px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    ul.usersReviews li.removeMarginRgt {
+        margin-right: 0;
+        float: right;
+    }
+    ul.usersReviews li > ul.user {
+        border-bottom: 1px solid;
+        margin-bottom: 3px;
+    }
+    ul.usersReviews li ul.user li a.userProfilePic{
         background: url('../images/image.gif') no-repeat;
         width: 40px;
         height: 40px;
-        display: block;
         text-indent: -10000px;
         float: left;
         margin-right: 10px;
     }
-    .usersReviews .user a.userName {
+    ul.usersReviews ul.user a.userName {
         text-transform: capitalize;
         font-size: 16px;
         color: #222222;
         display: block;
         line-height: 20px;
     }
-    .usersReviews .user .working span {
-        border-right: 1px solid #666666;
-        font-size: 12px;
+    ul.usersReviews ul.user li.company ul {
+        padding: 5px 0;
     }
-    .usersReviews .user .working span:last-child {
+    ul.usersReviews ul.user li.company a ul li {
+        display: inline-block;
+    }
+    ul.usersReviews ul.user li.company a ul li:first-child {
+        padding-right: 5px;
+        border-right: 1px solid #666666;
+    }
+    ul.usersReviews li.user .working span:last-child {
         border-right: none;
     }
-    .usersReviews .user .working span a {
+    ul.usersReviews li.user .working span a {
         margin-right: 5px;
+    }
+    ul.usersReviews li.review ul.userReviewComment {
+    }
+    ul.usersReviews li.review ul.userReviewComment span {
+        color: #888;
+        font-size: 12px;
+    }
+    ul.usersReviews ul.userReviewComment span a {
+        color: #D42;
+    }
+
+
+
+
+
+    /*block with border radius n ol find out is it common for education aor job history*/
+    .blockSummary {
+        border-radius: 5px;
+        border: 1px solid #d9d9d9;
+        width: 290px;
+        margin-right: 15px;        
+    }
+
+    /*right message inbox*/
+    #messages {
+        width: 260px;
+        float: right;
+    }
+
+    /*Head section*/
+        #messages .headMessage {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 230px;
+        }
+        #messages .headMessage h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: -1px;
+            color: #dd4422;
+            line-height: 40px;
+            float: left;
+        }
+        #messages .headMessage h2:before {
+            background: url('../images/messages.gif');
+            float: left;
+            content: "";
+            margin-right: 5px;
+            width: 40px;
+            height: 40px;
+        }
+        #messages .headMessage h5.newMsg {
+            line-height: 38px;
+            float: right;
+            background: none;
+        }
+        #messages .headMessage h5 em {
+            margin-left: 5px;
+            color: #FFF;
+            padding: 4px 8px;
+            border-radius: 20px;
+            background: #dd4422;
+        }
+        #messages h5, .date h5 {
+            text-transform: uppercase;
+            padding: 2px 2px 1px 3px;
+            background: #e5e5e5;
+            border-radius: 2px;
+            display: inline;
+            margin-bottom: 15px;
+        }
+
+    #messages .msgSepratorLine {
+        background: url('../images/msgSeprator.png') no-repeat;
+        opacity: 0.15;
+        height: 10px;
+        width: 200px;
+        display: block;
+        margin-left: -20px;
+    }
+
+    /*message inbox*/
+        ul.inbox {
+            width: 230px;
+        }
+        ul.inbox li {
+            margin-bottom: 3px;
+        }
+        ul.inbox li.date {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        ul.inbox li a.user {
+            display: block;
+            line-height: 35px;
+        }
+        ul.inbox li a span.userProfilePic{
+            width: 34px;
+            height: 34px;
+            float: left;
+            border: 1px solid #d0cfcf;
+            border-radius: 45px;
+            margin-right: 10px;
+        }
+        /*selecting different profile pic*/
+            .user1ProfilePic {
+                background: url('../images/all_faces.jpg') -68px -255px no-repeat;
+            }
+            .user2ProfilePic {
+                background: url('../images/all_faces.jpg') -70px -10px no-repeat;
+            }
+            .user3ProfilePic {
+                background: url('../images/all_faces.jpg') -68px -72px no-repeat;
+            }
+            .user4ProfilePic {
+                background: url('../images/all_faces.jpg') -14px -135px no-repeat;
+            }
+        ul.inbox li span.name {
+            float: left;
+        }
+        ul.inbox li.msg {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #ebebeb;
+        }
+        ul.inbox li.msg a {
+            margin-bottom: 10px;
+            display: block;
+            font-size: 12px;
+            color: #666666;
+        }        
+        ul.inbox li span.timeAgo {
+            display: block;
+            font-size: 12px;
+            color: #aaaaaa;
+            margin-bottom: 5px;
+        }
+
+
+
+
+
+
+
+    /*footer css*/
+    #footer {
+        background: #000;
+        color: #aaaaaa;
+        min-height: 100px;
+    }
+    #footer .footerWrapper {
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footerWrapper ul.footerNav {
+        line-height: 50px;
+    }
+    .footerWrapper ul.footerNav li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .footerWrapper ul.footerNav li:after {
+        content: "|";
+    }
+    .footerWrapper ul.footerNav li:last-child:after {
+        content: none;
+    }
+    .footerWrapper ul.footerNav li a {
+        margin-right: 10px;
+        color: #FFF;
     }
