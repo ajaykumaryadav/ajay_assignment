@@ -358,7 +358,6 @@ li.userRatting ol.ratting li {
         margin-bottom: 20px;
     }
     ul.address li:first-child {
-        float: none;
         width: 100%;
     }
 
