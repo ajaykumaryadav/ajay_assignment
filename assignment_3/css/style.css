@@ -282,9 +282,6 @@ li.userRatting ol.ratting li {
     	color: #FFF;
     	font-family: robotobold;
     }
-    #profile .basicInfo ol ol li {
-        line-height: 15px;
-    }
     #profile .basicInfo ol li span {
     	color: #FFF;
     }
