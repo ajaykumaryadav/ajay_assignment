@@ -475,13 +475,12 @@ li.userRatting ol.ratting li {
         display: inline-block;
     }
     #reviews .head a.nextPage {
-    }
-    #reviews .head a.nextPage {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -moz-transform:rotate(180deg);
         position: absolute;
         margin-top: -22px;
+        overflow: hidden;
     }
     #reviews .head h1 {
         float: left;
