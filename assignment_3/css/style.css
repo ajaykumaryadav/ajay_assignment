@@ -679,7 +679,10 @@ li.userRatting ol.ratting li {
             display: block;
             font-size: 12px;
             color: #666666;
-        }        
+        }
+        ul.inbox li.msg a:hover {
+            color: #222222;
+        }
         ul.inbox li span.timeAgo {
             display: block;
             font-size: 11px;
