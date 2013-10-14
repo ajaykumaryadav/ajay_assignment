@@ -473,16 +473,21 @@ li.userRatting ol.ratting li {
         float: right;
     }
     #reviews .head a {
-        background: url('../images/arrow.png') no-repeat;
         text-indent: -9999px;
         display: inline-block;
         width: 15px;
     }
+    #reviews .head a.prevPage {
+        background: url('../images/leftArrow.png') no-repeat;
+    }
     #reviews .head a.nextPage {
+        background: url('../images/rightArrow.png') no-repeat;
+        /*
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -moz-transform:rotate(180deg);
-        overflow: hidden;
+                overflow: hidden;
+        */
     }
     #reviews .head h1 {
         float: left;
