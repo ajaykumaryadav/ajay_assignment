@@ -669,6 +669,8 @@ li.userRatting ol.ratting li {
             }
         ul.inbox li span.name {
             float: left;
+            color: #222222;
+            font-size: 16px;
         }
         ul.inbox li.msg {
             margin-bottom: 12px;
@@ -682,7 +684,7 @@ li.userRatting ol.ratting li {
         }        
         ul.inbox li span.timeAgo {
             display: block;
-            font-size: 12px;
+            font-size: 11px;
             color: #aaaaaa;
             margin-bottom: 5px;
         }
