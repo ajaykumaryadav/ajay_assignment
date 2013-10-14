@@ -81,10 +81,10 @@ li.userRatting ol.ratting li {
     width: 15px;
  }
 li.userRatting ol.ratting li.active {
-    background: url('../images/ratting.png');
+    background: url('../images/ratting.png') no-repeat;
 }
 li.userRatting ol.ratting li {
-    background: url('../images/ratting.png') -15px;
+    background: url('../images/ratting.png') -15px no-repeat;
 }
 /*ratting ends*/
 
@@ -175,23 +175,23 @@ li.userRatting ol.ratting li {
                 height: 16px;
             }
             .headerWrapper ul.baseNav li.dashboard:before {
-                background: url('../images/dashboard.png');
+                background: url('../images/dashboard.png') no-repeat;
                 margin-top: 1px;
             }
             .headerWrapper ul.baseNav li.jobs:before {
-                background: url('../images/jobs.png');
+                background: url('../images/jobs.png') no-repeat;
                 margin-top: 1px;
             }
             .headerWrapper ul.baseNav li.translator:before {
-                background: url('../images/translator.png');
+                background: url('../images/translator.png') no-repeat;
                 margin-top: -1px;
             }
             .headerWrapper ul.baseNav li.language:before {
-                background: url('../images/language.png');
+                background: url('../images/language.png') no-repeat;
                 margin-top: 1px;
             }
             .headerWrapper ul.baseNav li.teams:before {
-                background: url('../images/teams.png');
+                background: url('../images/teams.png') no-repeat;
                 margin-top: 1px;
             }
 
@@ -368,19 +368,19 @@ li.userRatting ol.ratting li {
         padding-left: 10px;
     }
     ul.address li.homeAddress:before {
-        background: url('../images/address.gif');
+        background: url('../images/address.gif') no-repeat;
     }
     ul.address li.mobile:before {
-        background: url('../images/mobile.gif');
+        background: url('../images/mobile.gif') no-repeat;
     }
     ul.address li.fax:before {
-        background: url('../images/fax.png');
+        background: url('../images/fax.png') no-repeat;
     }
     ul.address li.emailid:before {
-        background: url('../images/email.gif');
+        background: url('../images/email.gif') no-repeat;
     }
     ul.address li.userWebsite:before {
-        background: url('../images/website.gif');
+        background: url('../images/website.gif') no-repeat;
     }
 
     /*job history starts*/
@@ -595,7 +595,7 @@ li.userRatting ol.ratting li {
             float: left;
         }
         #messages .headMessage h2:before {
-            background: url('../images/messages.gif');
+            background: url('../images/messages.gif') no-repeat;
             float: left;
             content: "";
             margin-right: 5px;
@@ -728,4 +728,3 @@ li.userRatting ol.ratting li {
     .footerWrapper span {
         text-align: center;
     }
-
