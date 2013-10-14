@@ -266,11 +266,9 @@ li.userRatting ol.ratting li {
     	display: block;
         margin-bottom: 10px;
     }
-    #profile .basicInfo ol {
-    	float: left;
-    }
     #profile .basicInfo ol.info {
     	width: 250px;
+        float: left;
     }
     #profile .basicInfo ol li {
     	font-size: 12px;
