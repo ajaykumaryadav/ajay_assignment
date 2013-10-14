@@ -486,7 +486,7 @@ li.userRatting ol.ratting li {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -moz-transform:rotate(180deg);
-                overflow: hidden;
+        overflow: hidden;
         */
     }
     #reviews .head h1 {
