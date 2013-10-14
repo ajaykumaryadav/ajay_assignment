@@ -444,9 +444,10 @@ li.userRatting ol.ratting li {
     }
     #education ul.edu li.eduSummary {
         float: left;
+        margin-right: 15px;
     }
      #education ul.edu li:nth-child(2) {
-        float: right;
+        margin-right: 0;
      }
     #education ul.edu li.eduSummary ul{
         display: block;
