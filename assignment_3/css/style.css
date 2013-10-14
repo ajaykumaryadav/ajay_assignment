@@ -92,8 +92,8 @@ li.userRatting ol.ratting li {
 /*header*/
 #header {
 	background: #FFF;
-	box-shadow: 1px 1px 5px #bbb7b7;
-    -moz-box-shadow: 1px 1px 5px #bbb7b7;
+	box-shadow: 0 2px 5px #bbb7b7;
+    -moz-box-shadow: 0 2px 5px #bbb7b7;
 }
 	.headerWrapper {
 		width: 960px;
