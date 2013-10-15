@@ -165,14 +165,12 @@ li.userRatting ol.ratting li {
     #header {
         margin-bottom: 30px;
     }
-    .headerWrapper ul.baseNav li a {
-        margin-left: 10px;
-    }
             .headerWrapper ul.baseNav li:before {
                 float:left;
                 content:"";
                 width: 16px;
                 height: 16px;
+                margin-right: 10px;
             }
             .headerWrapper ul.baseNav li.dashboard:before {
                 background: url('../images/dashboard.png') no-repeat;
@@ -240,11 +238,24 @@ li.userRatting ol.ratting li {
         top: 55px;
         left: 93px;
     }
+    ul.findUser li:nth-child(1),
+    ul.findUser li:nth-child(2),
+    ul.findUser li:nth-child(3) {
+        position: absolute;
+    }
+    ul.findUser li:nth-child(2)  {
+        top: 20px;
+        left: -11px;
+    }
+    ul.findUser li:nth-child(3) {
+        top: 34px;
+        left: -30px;
+    }
     ul.findUser li a {
     	height: 16px;
         width: 16px;
         text-indent: -10000px;
-        position: absolute;
+        display: block;
     }
     ul.findUser li a.twitter {
         background: url('../images/twitter.png') no-repeat;
