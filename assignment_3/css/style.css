@@ -291,6 +291,7 @@ li.userRatting ol.ratting li {
     #profile .basicInfo ol.review {
     	width: 175px;
         float: right;
+        margin-bottom: 12px;
     }
 
     #profile .basicInfo ol li.recommended {
@@ -324,7 +325,6 @@ li.userRatting ol.ratting li {
         text-align: right;
         width: 155px;
         line-height: 20px;
-        margin-bottom: 12px;
     }
     .informationWrapper {
         width: 610px;
