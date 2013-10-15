@@ -234,7 +234,6 @@ li.userRatting ol.ratting li {
         .margin-top: 10px;
         margin-bottom: 15px;
     	border: 5px solid #2f2f2f;
-        position: relative;
     }
     .userInfo .profilePic ul.findUser {
         position: relative;
