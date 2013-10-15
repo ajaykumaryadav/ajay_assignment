@@ -267,6 +267,7 @@ li.userRatting ol.ratting li {
     #profile .basicInfo ol.info {
     	width: 250px;
         float: left;
+        text-shadow: 0 1px rgba(0,0,0,.6);
     }
     #profile .basicInfo ol li {
     	font-size: 12px;
@@ -322,9 +323,10 @@ li.userRatting ol.ratting li {
     	font-size: 14px;
     }
     #profile .basicInfo ol li.upgradePrice {
+        font-family: robotobold;
         float: right;
         text-align: right;
-        width: 155px;
+        width: 150px;
         line-height: 20px;
     }
     .informationWrapper {
@@ -641,35 +643,41 @@ li.userRatting ol.ratting li {
             margin-bottom: 10px;
         }
         ul.inbox li a.user {
-            display: block;
             line-height: 35px;
         }
-        ul.inbox li a span.userProfilePic{
+
+        ul.inbox li a.user {
+            color: #222222;
+        }
+        ul.inbox li a span {
             width: 34px;
             height: 34px;
             float: left;
-            border: 1px solid #d0cfcf;
-            border-radius: 45px;
             margin-right: 10px;
+            border-radius: 45px;
+        }
+        ul.inbox li a.user:hover > span {
+            box-shadow: 0 0 5px #CCC;
+        }
+        ul.inbox li a span.msgUserProfilePic:before {
+            display: block;
+            content: "";
+            width: 34px;
+            height: 34px;
         }
         /*selecting different profile pic*/
-            .user1ProfilePic {
+            .msgUser1ProfilePic {
                 background: url('../images/all_faces.jpg') -68px -255px no-repeat;
             }
-            .user2ProfilePic {
+            .msgUser2ProfilePic {
                 background: url('../images/all_faces.jpg') -70px -10px no-repeat;
             }
-            .user3ProfilePic {
+            .msgUser3ProfilePic {
                 background: url('../images/all_faces.jpg') -68px -72px no-repeat;
             }
-            .user4ProfilePic {
+            .msgUser4ProfilePic {
                 background: url('../images/all_faces.jpg') -14px -135px no-repeat;
             }
-        ul.inbox li span.name {
-            float: left;
-            color: #222222;
-            font-size: 16px;
-        }
         ul.inbox li.msg {
             margin-bottom: 12px;
             border-bottom: 1px solid #ebebeb;
