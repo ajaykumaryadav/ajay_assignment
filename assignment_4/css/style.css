@@ -1,0 +1,72 @@
+/*tags reset*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+
+/*basic style*/
+.clearFix {
+	clear: both;
+}
+
+/*Header style start*/
+/*========================================*/
+#headerWrapper {
+	background: #f0f2f5;
+	border-bottom: 1px solid #cecece;
+	box-shadow: 0 0 5px #cecece;
+}
+	#header {
+		width: 940px;
+		margin: auto;
+	}
+	#header a.logo {
+		background: url('../images/logo.png') no-repeat;
+		width: 195px;
+		height: 50px;
+		display: block;
+		text-indent: -9999px;
+		float: left;
+		margin-right: 35px;
+	}
+	#header form {
+		padding-top: 7px;
+		display: block;
+		float: left;
+		margin-right: 190px;
+	}
+	#header .userProfile {
+		padding-top: 10px;
+		display: block;
+		float: left;
+		margin-bottom: 10px;
+	}
+	#header .userProfile a {
+		line-height: 25px;
+	}
+	#header .userProfile a.course {
+		display: block;
+		float: left;
+		margin-right: 25px;
+	}	
+	#header .userProfile a#profile {
+		display: block;
+		float: left;
+		text-indent: -9999px;
+	}
+	#header .userProfile a#profile span.userPic {
+		float: left;
+		display: block;
+		height: 30px;
+		width: 30px;
+		box-shadow: 0 0 5px #CCC;
+	}
+	#header .userProfile a#profile img {
+		width: 24px;
+		height: 24px;
+	}
+
+/*Content style start*/
+/*========================================*/
+#contentWrapper {
+	width: 940px;
+	margin: auto;
+}

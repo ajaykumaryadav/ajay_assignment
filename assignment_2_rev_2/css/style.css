@@ -1,36 +1,121 @@
-/*reset*/
+/*tags reset*/
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
 /*=======================================================*/
 /*Basic style*/
+body {
+	font-family: Georgia, arial;
+}
+a {
+	text-decoration: none;
+	color: #3355aa;
+	font-size: 15px;
+}
+a:hover {
+	color: red;
+}
+p {
+	font-size: 13px;
+	color: #666666;
+}
+/*=======================================================*/
+/*clearFix*/
+.clearFix {
+	clear: both;
+}
 
 /*=======================================================*/
 /*page wraper*/
-
+#wrapper {
+}
 
 /*=======================================================*/
 /*header section*/
 #header {
-	width: 940px;
-	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 	/*inside header property for topHeader only*/
+	.topHeader {
+		width: 940px;
+		margin: 0 auto;
+	}
 	.topHeader a.logo {
 		background: url('../images/logo.jpg') no-repeat;
 		display: block;
-		width: 240px;
-		height: 60px;
+		width: 260px;
+		height: 70px;
+		text-indent: -999px;
+		float: left;
+	}
+	#header .topHeader ul.userNav {
+		float: right;
+	}
+	#header .topHeader ul.userNav li {
+		float: left;
+		line-height: 30px;
+	}
+	#header .topHeader ul.userNav li a {
+		margin-right: 7px;
+	}
+	#header .topHeader ul.userNav li:after {
+		content: "|";
+		margin-right: 7px
+	}
+	/*removing right margin from last li*/
+	#header .topHeader ul.userNav li:last-child a,
+	#header .topHeader ul.userNav li:last-child:after {
+		margin-right: 0;
+		content: none;
 	}
 
 	/*inside header property for baseHeader only*/
-
+	#header .baseHeader {
+		background: #3355aa;
+	}
+		.baseHeader ul#navigation {
+			width: 940px;
+			margin: auto;
+		}
+		.baseHeader ul#navigation li {
+			float: left;
+			margin-right: 20px;
+		}
+		.baseHeader ul#navigation li a {
+			color: #FFF;
+			line-height: 40px;
+			display: block;
+			padding: 0 5px;
+		}
+		.baseHeader ul#navigation li a:hover {
+			background: #666;
+		}
+		.baseHeader ul#navigation li.clearLi {
+			clear: left;
+			float: none;
+		}
 /*=======================================================*/
 /*page content*/
+#content {
+	width: 940px;
+	margin: auto;
+}
 
 /*separate*/
 
 	/*slider, what we do and announcements are wrapped inside class fold starts*/
+	.fold {
+
+	}
+		.fold #slider {
+			box-shadow: 0 0 5px #CCC;
+			padding: 10px;
+			width: 400px;
+			border-radius: 5px;
+		}
+		.fold #slider img {
+			.margin: 0 0 0 5px;
+		}
 
 	/*fold ends*/
 
