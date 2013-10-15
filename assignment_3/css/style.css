@@ -662,8 +662,6 @@ li.userRatting ol.ratting li {
         ul.inbox li a span.msgUserProfilePic:before {
             display: block;
             content: "";
-            width: 34px;
-            height: 34px;
         }
         /*selecting different profile pic*/
             .msgUser1ProfilePic {
