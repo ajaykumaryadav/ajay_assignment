@@ -602,7 +602,7 @@ li.userRatting ol.ratting li {
             font-weight: bold;
             letter-spacing: -1px;
             color: #dd4422;
-            line-height: 40px;
+            line-height: 50px;
             float: left;
         }
         #messages .headMessage h2:before {
@@ -612,6 +612,8 @@ li.userRatting ol.ratting li {
             margin-right: 5px;
             width: 40px;
             height: 40px;
+            margin-top: 5px;
+            margin-left: -4px;
         }
         #messages .headMessage h5.newMsg {
             line-height: 38px;
@@ -647,7 +649,7 @@ li.userRatting ol.ratting li {
             width: 230px;
         }
         ul.inbox li {
-            margin-bottom: 3px;
+            margin-bottom: 5px;
         }
         ul.inbox li.date {
             margin-top: 30px;
@@ -688,7 +690,7 @@ li.userRatting ol.ratting li {
                 background: url('../images/all_faces.jpg') -14px -135px no-repeat;
             }
         ul.inbox li.msg {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             border-bottom: 1px solid #ebebeb;
         }
         ul.inbox li.msg a {
