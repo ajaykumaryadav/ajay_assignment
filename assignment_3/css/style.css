@@ -165,14 +165,12 @@ li.userRatting ol.ratting li {
     #header {
         margin-bottom: 30px;
     }
-    .headerWrapper ul.baseNav li a {
-        margin-left: 10px;
-    }
             .headerWrapper ul.baseNav li:before {
                 float:left;
                 content:"";
                 width: 16px;
                 height: 16px;
+                margin-right: 10px;
             }
             .headerWrapper ul.baseNav li.dashboard:before {
                 background: url('../images/dashboard.png') no-repeat;
