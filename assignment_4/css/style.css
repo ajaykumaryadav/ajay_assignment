@@ -27,6 +27,7 @@ a {
 	color: #225588;
 	text-decoration: none;
 }
+
 /*Header style start*/
 /*========================================*/
 #headerWrapper {
@@ -95,6 +96,7 @@ a {
 			text-indent: -999999px;
 			margin-top: 25px;
 		}
+		/*header end*/
 
 /*Content style start*/
 /*========================================*/
@@ -225,14 +227,7 @@ a {
 		}
 	/*content end*/
 
-	/*adds*/
-	#adds {
-		position: absolute;
-		margin-top: -1220px;
-		margin-left: 1060px;
-	}
-
-
+/*footer start*/
 	#footerWrapper {
 		border-top: 1px solid #dddddd;
 		min-height: 85px;
@@ -262,4 +257,12 @@ a {
 	}
 	#footer span.copyRight {
 		float: right;
+	}
+
+/*==========================================================*/
+/*adds*/
+	#adds {
+		position: absolute;
+		margin-top: -1220px;
+		margin-left: 1060px;
 	}
