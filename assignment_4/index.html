@@ -8,7 +8,26 @@
 		<meta name="description" content="Web Tutorials">
 		<meta name="keywords" content="HTML,CSS">
 		<meta name="author" content="">
-		<meta charset="UTF-8">        	
+		<meta charset="UTF-8">
+        
+        <script src="js/jquery-1.10.0.min.js" type="text/javascript" charset="UTF-8"></script>
+        <script src="js/jquery.easing.min.js" type="text/javascript" charset="UTF-8"></script>
+        <script src="js/jquery.vgrid.min.js" type="text/javascript" charset="UTF-8"></script>
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function(){
+                $("#content").vgrid({
+                    easing: "easeOutQuint",
+                    time: 400,
+                    delay: 20,
+                    wait: 200
+                });
+            });
+            //]]>
+        </script>       	
     </head>
 
     <body>
@@ -21,14 +40,11 @@
     				<form action="#" method="#">
     					<input type="text" name="search" placeholder="Lectures, Courses">
     				</form>
-    				<div class="userProfile">
-    					<a href="#" title="Courses" class="course">Courses</a>
-    					<a href="#" title="profile" id="profile">
-    						<span class="userPic">
-    							<img src="images/profilePic.jpg" alt="profile pic" >
-    						</span>
-    						Profile</a>
-    				</div>
+                    <a href="#" title="Courses" class="course">Courses</a>
+                    <a href="#" class="userPic">
+                        <img src="images/profilePic.jpg" alt="Pic">
+                    </a>
+                    <a href="#" class="profile">Down Arrow</a>
     				<div class="clearFix"></div>
     			</div>
     		</div>
@@ -37,13 +53,13 @@
     		<!--Content of the page starts-->
     		<div id="contentWrapper">
     			<div class="head">
-    				<a href="#" class="homeLocation">nptl</a>
+    				<h1 class="homeLoc">nptel</h1>
     				<span>Courses</span>
     			</div>
     			<div id="content">
-    				<div class="tile">
+    				<div class="tile" id="mine">
     					<div class="tileHead">
-    						<span class="image"></span>
+    						<span class="img aerospace"></span>
     					</div>
     					<div class="info">
     						<span>
@@ -54,19 +70,224 @@
 	    					</span>
     					</div>
     					<div class="moreAbout">
-    						<a href="#" class="video">Video</a>
-    						<a href="#" class="articles">Read</a>
-    						<a href="#" class="readMore">More</a>
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
     					</div>
-
     				</div>
+                    <div class="tile" id="ajay">
+                        <div class="tileHead">
+                            <span class="img biotechnology"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">biotechnology</a> (26)</h2>
+                                <h3>Enzyme Science and Engineering</h3>
+                                <h3>Thermodynamics</h3>
+                                <h3>Proteomics and Genomics</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(88)</a>
+                                <a href="#" class="articles">(76)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img conputerScience"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2>
+                                    <a href="#">Computer Science and Engineering</a> (88)
+                                </h2>
+                                <h3>Foundation of Scientific Computing</h3>
+                                <h3>Advanced Control System Design for Aerospace Vehicles</h3>
+                                <h3>Flight dynamics 1 - Airplane and performance</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img mathematics"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">Mathematics</a> (66)</h2>
+                                <h3>Foundation of Scientific Computing</h3>
+                                <h3>Advanced Control System Design for Aerospace Vehicles</h3>
+                                <h3>Flight dynamics 1 - Airplane and performance</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img automobile"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">Automobile Engineering</a> (2)</h2>
+                                <h3>Enzyme Science and Engineering</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img environmental"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">environmental science</a> (58)</h2>
+                                <h3>Foundation of Scientific Computing</h3>
+                                <h3>Advanced Control System Design for Aerospace Vehicles</h3>
+                                <h3>Flight dynamics 1 - Airplane and performance</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>            
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img general"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">general</a> (1)</h2>
+                                <h3>Enzyme Science and Engineering</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img conputerScience"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2>
+                                    <a href="#">Computer Science and Engineering</a> (88)
+                                </h2>
+                                <h3>Foundation of Scientific Computing</h3>
+                                <h3>Advanced Control System Design for Aerospace Vehicles</h3>
+                                <h3>Flight dynamics 1 - Airplane and performance</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img mathematics"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">Mathematics</a> (66)</h2>
+                                <h3>Foundation of Scientific Computing</h3>
+                                <h3>Advanced Control System Design for Aerospace Vehicles</h3>
+                                <h3>Flight dynamics 1 - Airplane and performance</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tileHead">
+                            <span class="img automobile"></span>
+                        </div>
+                        <div class="info">
+                            <span>
+                                <h2><a href="#">Automobile Engineering</a> (2)</h2>
+                                <h3>Enzyme Science and Engineering</h3>
+                            </span>
+                        </div>
+                        <div class="moreAbout">
+                            <span>
+                                <a href="#" class="video">(128)</a>
+                                <a href="#" class="articles">(178)</a>
+                                <a href="#" class="readMore">More</a>
+                                <div class="clearFix"></div>
+                            </span>
+                        </div>
+                    </div>
     			</div>
-
+                <!--content end-->
     		</div>
-    		<!--content end-->
+    		<!--contentwrapper end-->
+            <div id="adds">
+                    <img src="images/add.jpg" alt="add"><br>
+                    <img src="images/add.jpg" alt="add">
+            </div>
 
     		<!--Footer start-->
-    		<div id="footer">
+    		<div id="footerWrapper">
+                <div id="footer">
+                    <ul class="footerNav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Disciplines</a></li>
+                        <li><a href="#">Contat us</a></li>   
+                        <li class="clearLi"></li>
+                    </ul>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms</a>
+                    <span class="copyRight">&copy; 2012 My Open Campus</span>
+                </div>
     		</div>
     		<!--Footer end-->
 

@@ -3,16 +3,37 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 
 /*basic style*/
+body {
+	font-family: arial;
+	color: #222222;
+}
 .clearFix {
 	clear: both;
 }
-
+h1 {
+	font-size: 15px;
+}
+h2 {
+	font-size: 13px;
+	color: #888888;
+}
+h1, h2,h3 {
+	font-weight: bold;
+}
+h3 {
+	font-size: 11px;
+}
+a {
+	color: #225588;
+	text-decoration: none;
+}
 /*Header style start*/
 /*========================================*/
 #headerWrapper {
 	background: #f0f2f5;
-	border-bottom: 1px solid #cecece;
-	box-shadow: 0 0 5px #cecece;
+	border-bottom: 1px solid #FFF;
+	box-shadow: 0 2px 5px #cecece;
+	margin-bottom: 16px;
 }
 	#header {
 		width: 940px;
@@ -22,51 +43,223 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 		background: url('../images/logo.png') no-repeat;
 		width: 195px;
 		height: 50px;
-		display: block;
 		text-indent: -9999px;
 		float: left;
 		margin-right: 35px;
 	}
 	#header form {
-		padding-top: 7px;
-		display: block;
 		float: left;
-		margin-right: 190px;
+		margin-right: 180px;
+		line-height: 50px;
+	}
+	#header form input[type=text] {
+		background: url('../images/search.png') no-repeat;
+		box-shadow: inset 0 1px 3px rgba(0,0,0,.5);
+		height: 35px;
+		width: 320px;
+		border-radius: 3px;
+		padding-left: 40px;
 	}
 	#header .userProfile {
-		padding-top: 10px;
-		display: block;
 		float: left;
-		margin-bottom: 10px;
+		line-height: 50px;
 	}
-	#header .userProfile a {
-		line-height: 25px;
-	}
-	#header .userProfile a.course {
-		display: block;
-		float: left;
-		margin-right: 25px;
-	}	
-	#header .userProfile a#profile {
-		display: block;
-		float: left;
-		text-indent: -9999px;
-	}
-	#header .userProfile a#profile span.userPic {
-		float: left;
-		display: block;
-		height: 30px;
-		width: 30px;
-		box-shadow: 0 0 5px #CCC;
-	}
-	#header .userProfile a#profile img {
-		width: 24px;
-		height: 24px;
-	}
+		#header a.course {
+			float: left;
+			font-size: 15px;
+			font-weight: bold;
+			margin-right: 25px;
+			text-transform: uppercase;
+			color: #222222;
+			line-height: 50px;
+		}
+		#header a.userPic {
+			width: 30px;
+			height: 30px;
+			float: left;
+			box-shadow: 0 0 5px #CCC;
+			margin-top: 10px;
+			margin-right: 5px;
+		}
+		#header a.userPic img {
+			width: 24px;
+			height: 24px;
+			margin-top: 3px;
+			margin-left: 3px;
+		}
+		#header a.profile {
+			background: url('../images/downArrow.png');
+			width: 9px;
+			height: 5px;
+			float: left;
+			text-indent: -999999px;
+			margin-top: 25px;
+		}
 
 /*Content style start*/
 /*========================================*/
 #contentWrapper {
 	width: 940px;
 	margin: auto;
+	margin-bottom: 60px;
+	position: relative;
 }
+	.head {
+		border-bottom: 1px solid #dcdcdc;
+		line-height: 38px;
+		margin-bottom: 20px;
+	}
+	.head h1 {
+		text-transform: uppercase;
+		color: #222222;
+		float: left;
+		margin-right: 10px;
+	}
+	.head h1.homeLoc:after {
+		background: url('../images/rightArrow.png');
+		width: 5px;
+		height: 11px;
+		content: "";
+		float: right;
+		margin-left: 10px;
+		margin-top: 13px;
+	}
+	.head span {
+		color: #888888;
+		font-size: 15px;
+	}
+
+	#content .tile {
+		width: 220px;
+		box-shadow: 0 0 5px #666;
+		border-radius: 3px;
+		margin-bottom: 18px;
+		float: left;
+		margin-right: 25px;
+	}
+		#content .tile .tileHead {
+			padding: 6px;
+			border-bottom: 1px solid #cccccc;
+			margin-bottom: 6px;
+		}
+		#content .tile .tileHead span.img {
+			width: 206px;
+			height: 125px;
+		}
+		#content .tile .tileHead span.aerospace {
+			background: url('../images/aerospace.jpg') no-repeat;
+		}
+		#content .tile .tileHead span.biotechnology {
+			background: url('../images/biotechnology.jpg') no-repeat;
+		}
+		#content .tile .tileHead span.conputerScience {
+			background: url('../images/conputerScience.jpg') no-repeat;
+		}
+		#content .tile .tileHead span.mathematics {
+			background: url('../images/mathematics.jpg') no-repeat;
+		}		
+		#content .tile .tileHead span.automobile {
+			background: url('../images/automobile.jpg') no-repeat;
+		}
+		#content .tile .tileHead span.environmental {
+			background: url('../images/environmental.jpg') no-repeat;
+		}
+		#content .tile .tileHead span.general {
+			background: url('../images/general.jpg') no-repeat;
+		}
+		
+		#content .tile .info {
+			border-bottom: 1px solid #ebeef2;
+		}
+		#content .tile span {
+			display: block;
+			width: 190px;
+			margin: auto;
+		}
+		#content .tile .info span h2 {
+			text-transform: capitalize;
+			margin-top: 14px;
+			padding-bottom: 7px;
+			border-bottom: 1px solid #eeeeee;
+		}
+		#content .tile .info span h3 {
+			padding: 8px 0;
+			border-bottom: 1px solid #eeeeee;
+			letter-spacing: -1px;
+		}
+		#content .tile .info span h3:last-child {
+			border-bottom: none;
+		}
+		#content .tile .moreAbout {
+			background: #f4f6f8;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+		#content .tile .moreAbout a {
+			font-size: 13px;
+			color: #888888;
+			font-weight: bold;
+			float: left;
+			margin: 12px 0;
+			margin-right: 20px;
+		}
+		#content .tile .moreAbout a.readMore{
+			margin-right: 0;
+			color: #225588;
+		}
+		#content .tile .moreAbout a.video:before,
+		#content .tile .moreAbout a.articles::before {
+			content: "";
+			margin-right: 8px;
+			height: 20px;
+		}
+		#content .tile .moreAbout a.video:before {
+			background: url('../images/video.png') no-repeat;
+			float: left;
+			width: 22px;
+		}
+		#content .tile .moreAbout a.articles:before {
+			background: url('../images/lists.png') no-repeat;
+			float: left;
+			width: 20px;
+		}
+	/*content end*/
+
+	/*adds*/
+	#adds {
+		position: absolute;
+		margin-top: -1220px;
+		margin-left: 1060px;
+	}
+
+
+	#footerWrapper {
+		border-top: 1px solid #dddddd;
+		min-height: 85px;
+		color: #888888;
+	}
+		#footer {
+			line-height: 40px;
+			width: 940px;
+			margin: auto;
+		}
+	#footer ul.footerNav {
+		float: left;
+	}
+	#footer a {
+		font-size: 13px;
+	}
+	#footer ul.footerNav li {
+		float: left;
+		margin-right: 15px;
+	}
+	#footer ul.footerNav li a {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	#footer ul.footerNav li.clearLi {
+		float: none;
+	}
+	#footer span.copyRight {
+		float: right;
+	}
