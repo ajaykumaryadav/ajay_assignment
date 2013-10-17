@@ -55,7 +55,7 @@ a {
 	}
 	#header form input[type=text] {
 		background: #FFF url('../images/search.png') no-repeat;
-		box-shadow: inset 0 1px 1px #bbbbbb;
+		box-shadow: 0 -1px 1px #bbbbbb;
 		height: 35px;
 		width: 320px;
 		border-radius: 3px;
