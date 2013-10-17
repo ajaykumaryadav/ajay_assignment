@@ -62,6 +62,11 @@ a {
 		padding-left: 40px;
 		border: 1px solid #dddddd;
 	}
+	#header form input:focus {
+		outline: none;
+		border-radius: 3px;
+		box-shadow: 0 0 3px #7570b3;
+	}
 	#header .userProfile {
 		float: left;
 		line-height: 50px;
