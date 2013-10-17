@@ -105,7 +105,6 @@ a {
 	width: 940px;
 	margin: auto;
 	margin-bottom: 60px;
-	position: relative;
 }
 	.head {
 		border-bottom: 1px solid #dcdcdc;
@@ -117,6 +116,7 @@ a {
 		color: #222222;
 		float: left;
 		margin-right: 10px;
+		font-weight: normal;
 	}
 	.head h1.homeLoc:after {
 		background: url('../images/rightArrow.png');
