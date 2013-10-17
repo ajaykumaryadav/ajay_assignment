@@ -134,7 +134,8 @@ a {
 
 	#content .tile {
 		width: 220px;
-		box-shadow: 0 0 5px #666;
+		border: 1px solid #CCC;
+		box-shadow: 1px 1px 3px #d0d0d0;
 		border-radius: 3px;
 		margin-bottom: 18px;
 		float: left;
