@@ -1,0 +1,747 @@
+/* css */
+/*tags reset*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../font/roboto-bold-webfont.eot');
+    src: url('../font/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-bold-webfont.woff') format('woff'),
+         url('../font/roboto-bold-webfont.ttf') format('truetype'),
+         url('../font/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*basic properties*/
+body {
+	font-family: arial;
+	background: #f3f3f3;
+}
+a {
+	text-decoration: none;
+	color: #666666;
+}
+a.active {
+	color: #444444;
+}
+a:hover {
+	color: #444444;
+}
+span.summary {
+	color: #888888;
+}
+h1,h2,h3 {
+    color: #444444;    
+}
+h1 {
+	font-size: 24px;
+    font-family: robotobold;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 14px;
+    line-height: 25px;
+}
+h4 {
+    font-size: 11px;
+    color: #aaaaaa;
+    line-height: 20px;
+}
+h5 {
+    font-size: 11px;
+    color: #666666;
+}
+.clearFix {
+	clear: both;
+}
+
+/*==================================*/
+/*ratting stars using css*/
+ol.reviewerRatting {
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 14px;
+}
+ol li.userRatting {
+    float: right;    
+ }
+li.userRatting ol.ratting li {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+ }
+li.userRatting ol.ratting li.active {
+    background: url('../images/ratting.png') no-repeat;
+}
+li.userRatting ol.ratting li {
+    background: url('../images/ratting.png') -15px no-repeat;
+}
+/*ratting ends*/
+
+
+/*header*/
+#header {
+	background: #FFF;
+	box-shadow: 0 2px 5px #bbb7b7;
+    -moz-box-shadow: 0 2px 5px #bbb7b7;
+}
+	.headerWrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+	.headerWrapper a.logo {
+		margin-top: 5px;
+		text-indent: -1000000px;
+		background: url('../images/logo.png') no-repeat;
+		width: 150px;
+		height: 45px;
+        display: inline-block;
+	}
+    .headerWrapper ul#nav {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .headerWrapper ul#nav > li {
+        float: right;
+    }
+	.headerWrapper ul.topNav,
+	.headerWrapper ul.baseNav {
+		float: right;
+	}
+	.headerWrapper ul.topNav {
+        margin: 5px 0 10px 0;
+	}
+	.headerWrapper ul.topNav li,
+	.headerWrapper ul.baseNav li {
+		float: left;
+		font-size: 12px;
+	}
+    .headerWrapper ul.topNav li:after {
+        content: "|";
+        margin-right: 8px;
+    }
+	.headerWrapper ul.topNav li a {
+		margin-right: 8px;
+		color: #444444;
+	}
+    .headerWrapper ul.topNav li:nth-child(3):after,.headerWrapper ul.topNav li:nth-child(4):after {
+        content: none;
+    }
+	.headerWrapper ul.topNav li:nth-child(3),
+	.headerWrapper ul.topNav li a.logout {
+		margin-right: 0;
+	}
+	.headerWrapper ul.baseNav li {
+		margin-right: 30px;
+	}
+	.headerWrapper ul.baseNav li a {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-family: robotobold;
+	}
+	.headerWrapper ul.baseNav li:last-child, 
+	.headerWrapper ul.baseNav li:nth-child(5) {
+		margin-right: 0;
+	}
+    .headerWrapper ul li.clearLi {
+        float: none;
+        border-right: none;
+    }
+    .clearTopNav {
+        clear: right;
+    }
+	/*nav image code home code*/
+    #header {
+        margin-bottom: 30px;
+    }
+            .headerWrapper ul.baseNav li:before {
+                float:left;
+                content:"";
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+            }
+            .headerWrapper ul.baseNav li.dashboard:before {
+                background: url('../images/dashboard.png') no-repeat;
+                margin-top: 1px;
+            }
+            .headerWrapper ul.baseNav li.jobs:before {
+                background: url('../images/jobs.png') no-repeat;
+                margin-top: 1px;
+            }
+            .headerWrapper ul.baseNav li.translator:before {
+                background: url('../images/translator.png') no-repeat;
+                margin-top: -1px;
+            }
+            .headerWrapper ul.baseNav li.language:before {
+                background: url('../images/language.png') no-repeat;
+                margin-top: 1px;
+            }
+            .headerWrapper ul.baseNav li.teams:before {
+                background: url('../images/teams.png') no-repeat;
+                margin-top: 1px;
+            }
+
+    /*content wrapper for page*/
+    #content {
+        margin: 0 auto;
+        width: 960px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        background: #fbfbfb;
+        box-shadow: 0 0 5px #666;
+    }
+
+    #profile {
+        background: #FFF;
+        border-radius: 5px 0 0 5px;      
+        width: 680px;
+        float: left;
+        box-shadow: 3px 0 5px #e0dfdf;
+        margin-right: 15px;
+    }
+
+    #profile .basicInfo {
+    	background: #444444;
+        border-top-left-radius: 5px;
+        padding: 17px 20px 0 22px;
+        margin-bottom: 30px;
+    }
+    #profile .basicInfo .userInfo {
+    	width: 120px;
+    	float: left;
+    	margin-right: 17px;
+    }
+    .userInfo .profilePic {
+    	background: #f2f2f2 url('../images/121.png') no-repeat;
+    	/* width, height and radius have to change*/
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        .margin-top: 10px;
+        margin-bottom: 15px;
+    	border: 5px solid #2f2f2f;
+    }
+    .userInfo .profilePic ul.findUser {
+        position: relative;
+        top: 55px;
+        left: 93px;
+    }
+    ul.findUser li:nth-child(1),
+    ul.findUser li:nth-child(2),
+    ul.findUser li:nth-child(3) {
+        position: absolute;
+    }
+    ul.findUser li:nth-child(2)  {
+        top: 20px;
+        left: -11px;
+    }
+    ul.findUser li:nth-child(3) {
+        top: 34px;
+        left: -30px;
+    }
+    ul.findUser li a {
+    	height: 16px;
+        width: 16px;
+        text-indent: -10000px;
+        display: block;
+    }
+    ul.findUser li a.twitter {
+        background: url('../images/twitter.png') no-repeat;
+    }
+    ul.findUser li a.facebook {
+        background: url('../images/facebook.png') no-repeat;
+        top: 20px;
+        left: -11px;
+    }
+    ul.findUser li a.linkedin {
+        background: url('../images/linkedin.png') no-repeat;
+        top: 34px;
+        left: -30px;
+    }
+    #profile .basicInfo .userInfo a.userType {
+    	background: url('../images/userPlan.png') no-repeat;
+    	text-indent: -100000px;
+    	display: block;
+    }
+    #profile .basicInfo ol.info {
+    	width: 250px;
+        float: left;
+        text-shadow: 0 1px rgba(0,0,0,.6);
+    }
+    #profile .basicInfo ol li {
+    	font-size: 12px;
+    	color: #bbbbbb;
+        margin-bottom: 2px;
+    }
+    #profile .basicInfo ol li h1 {
+        margin-bottom: 0;
+        padding: 0;
+        border-bottom: none;
+    	color: #FFF;
+    	font-family: robotobold;
+    }
+    #profile .basicInfo ol li span {
+    	color: #FFF;
+    }
+    #profile .basicInfo ol li.about {
+    	font-weight: bold;
+    	color: #FFF;
+        line-height: 30px;
+    }
+    #profile .basicInfo ol.review {
+    	width: 175px;
+        float: right;
+        margin-bottom: 12px;
+    }
+
+    #profile .basicInfo ol li.recommended {
+    	margin-bottom: 30px;
+        clear: both;
+    }
+    #profile .basicInfo ol li.recommended span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #profile .basicInfo ol li.upgrade {
+    	background: -webkit-linear-gradient(top, #515151, #383838 50%);
+        background: -moz-linear-gradient(top, #515151, #383838 50%);
+    	border-radius: 3px;
+    	box-shadow: 0 0 3px #000;
+        margin-bottom: 10px;
+        width: 165px;
+        float: right;
+    }
+    #profile .basicInfo ol li.upgrade:hover {
+        box-shadow: 
+    }
+    #profile .basicInfo ol li.upgrade a {
+    	text-align: center;
+    	color: #FFF;
+        padding: 5px 0;
+    	display: block;
+    	font-size: 14px;
+    }
+    #profile .basicInfo ol li.upgradePrice {
+        font-family: robotobold;
+        float: right;
+        text-align: right;
+        width: 150px;
+        line-height: 20px;
+    }
+    .informationWrapper {
+        width: 610px;
+        margin: 0 auto;
+    }
+    /*inside informationWrapper*/
+
+    .informationWrapper ul.address {
+        border-bottom: 1px solid #ebebeb;
+        float: left;
+    }
+    ul.address {
+        margin-bottom: 30px;
+    }
+    ul.address li {
+        color: #666666;
+        text-transform: capitalize;
+        font-size: 14px;
+        float: left;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    ul.address li.userWebsite a{
+        color: #dd4422;
+        text-transform: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    ul.address li:first-child {
+        width: 100%;
+    }
+
+    /*placing images before mobile n ol */
+    ul.address li:before {
+        float:left;
+        content:"";
+        width: 20px;
+        height: 15px;
+        padding-left: 10px;
+    }
+    ul.address li.homeAddress:before {
+        background: url('../images/address.gif') no-repeat;
+    }
+    ul.address li.mobile:before {
+        background: url('../images/mobile.gif') no-repeat;
+    }
+    ul.address li.fax:before {
+        background: url('../images/fax.png') no-repeat;
+    }
+    ul.address li.emailid:before {
+        background: url('../images/email.gif') no-repeat;
+    }
+    ul.address li.userWebsite:before {
+        background: url('../images/website.gif') no-repeat;
+    }
+
+    /*job history starts*/
+    #jobHistory {
+        margin-bottom: 35px;
+    }
+    #jobHistory h1 {
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 12px;
+        margin-bottom: 10px;
+    }
+    #jobHistory h1:before {
+        background: url('../images/jobHistory.gif') no-repeat;
+        width: 35px;
+        height: 30px;
+        content: "";
+        float: left;
+        margin-right: 5px;
+        .margin-left: 5px;
+    }
+    #jobHistory h4 {
+        margin-bottom: 8px;
+    }
+    #jobHistory li.summary {
+        font-size: 12px;
+        color: #888888;
+        line-height: 20px;
+    }
+    #jobHistory ul.jobs li.job {
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 12px;
+    }
+    /*Education history */
+    #education {
+        margin-bottom: 20px;
+    }
+    #education h1 {
+        margin-bottom: 22px;
+    }
+    #education h1:before {
+        background: url('../images/education.gif') no-repeat;
+        width: 40px;
+        height: 30px;
+        content: "";
+        float: left;
+        margin-right: 10px;
+    }
+    #education ul.edu li.eduSummary {
+        border-radius: 5px;
+        border: 1px solid #d9d9d9;
+        width: 48%;
+        /* top maintain in same line removed margin-right form first col
+        margin-right: 18px;
+        */
+    }
+    #education ul.edu li.eduSummary {
+        float: left;
+        margin-right: 20px;
+    }
+     #education ul.edu li:nth-child(2) {
+        margin-right: 0;
+     }
+    #education ul.edu li.eduSummary ul{
+        display: block;
+    }
+    #education ul.edu li.eduSummary span {
+        font-size: 11px;
+        color: #aaaaaa;
+    }
+    #education ul.edu li.eduSummary ul {
+        margin: 7px 0 20px 12px;
+    }
+
+    /* review starts*/
+    #reviews {
+        margin-bottom: 15px;
+    }
+    #reviews .head {
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 10px;
+        margin-bottom: 15px;        
+    }
+    #reviews .head span {
+        margin-top: 18px;
+        float: right;
+    }
+    #reviews .head a {
+        text-indent: -9999px;
+        display: inline-block;
+        width: 15px;
+    }
+    #reviews .head a.prevPage {
+        background: url('../images/leftArrow.png') no-repeat;
+    }
+    #reviews .head a.nextPage {
+        background: url('../images/rightArrow.png') no-repeat;
+        /*
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform:rotate(180deg);
+        overflow: hidden;
+        */
+    }
+    #reviews .head h1 {
+        float: left;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    ul.usersReviews li.review {
+        padding: 10px 0 5px 12px;
+        float: left;
+        /* top maintain in same line removed margin-right form first col
+        margin-right: 18px;
+        */
+        margin-bottom: 18px;
+    }
+    ul.usersReviews li.review:nth-child(2),
+    ul.usersReviews li.review:nth-child(4) {
+        margin-right: 0;
+        float: right;
+    }
+    ul.usersReviews ul.user {
+        margin-bottom: 2px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    ul.usersReviews ul.user li.userProfilePic {
+        float: left;
+        margin-bottom: 8px;
+    }
+    ul.usersReviews ul.user li.userProfilePic  a {
+        border: 1px solid #c0c0c0;
+        background: url('../images/all_faces.jpg') -231px  -188px no-repeat;
+        height: 59px;
+        width: 59px;
+        display: block;
+        border-radius: 60px;
+        text-indent: -99999px;
+        margin-right: 8px;
+    }
+    ul.usersReviews ul.user li.userName {
+        float: left;
+    }
+    ul.usersReviews ul.user li.userName span.names {
+        display: block;
+        margin-top: 14px;
+    }
+    ul.usersReviews ul.user li.userName a.name {
+        font-size: 16px;
+        color: #222222;
+    }
+    ul.usersReviews ul.user li.userName a.positionCompany {
+        font-size: 12px;
+    }
+    ul.usersReviews ul.user li.userName a.positionCompany span:first-child:after{
+        padding-left: 3px;
+        content: "|";
+    }
+    ul.usersReviews ul.user li.userName span a.positionCompany {
+        display: block;
+    }
+    ul.usersReviews ul.user li.clearLiFix {
+        clear: both;
+    }
+    Ul.usersReviews ul.userReviewComment {
+
+    }
+    Ul.usersReviews ul.userReviewComment span {
+        color: #888888;
+        font-size: 12px;
+    }
+    Ul.usersReviews ul.userReviewComment span a{
+        color: #dd4422;
+        font-size: 11px;
+    }
+
+
+
+
+
+    /*block with border radius n ol find out is it common for education aor job history*/
+    .blockSummary {
+        border-radius: 5px;
+        border: 1px solid #d9d9d9;
+        box-shadow: 0 0 5px #d9d9d9;
+        width: 282px;
+    }
+
+
+
+/*=====================================================*/
+    /*right message inbox*/
+    #messages {
+        width: 260px;
+        float: right;
+    }
+
+    /*Head section*/
+        #messages .headMessage {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 230px;
+        }
+        #messages .headMessage h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: -1px;
+            color: #dd4422;
+            line-height: 50px;
+            float: left;
+        }
+        #messages .headMessage h2:before {
+            background: url('../images/messages.gif') no-repeat;
+            float: left;
+            content: "";
+            margin-right: 5px;
+            width: 40px;
+            height: 40px;
+            margin-top: 5px;
+            margin-left: -4px;
+        }
+        #messages .headMessage h5.newMsg {
+            line-height: 38px;
+            float: right;
+            background: none;
+        }
+        #messages .headMessage h5 em {
+            margin-left: 5px;
+            color: #FFF;
+            padding: 4px 8px;
+            border-radius: 20px;
+            background: #dd4422;
+        }
+        #messages h5, .date h5 {
+            text-transform: uppercase;
+            padding: 2px 2px 1px 3px;
+            background: #e5e5e5;
+            border-radius: 2px;
+            display: inline;
+            margin-bottom: 15px;
+        }
+
+    #messages .msgSepratorLine {
+        background: url('../images/msgSeprator.png') no-repeat;
+        opacity: 0.15;
+        height: 10px;
+        width: 200px;
+        display: block;
+        margin-left: -20px;
+    }
+    /*message inbox*/
+        ul.inbox {
+            width: 230px;
+        }
+        ul.inbox li {
+            margin-bottom: 5px;
+        }
+        ul.inbox li.date {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        ul.inbox li a.user {
+            line-height: 35px;
+        }
+
+        ul.inbox li a.user {
+            color: #222222;
+        }
+        ul.inbox li a span {
+            width: 34px;
+            height: 34px;
+            float: left;
+            margin-right: 10px;
+            border-radius: 45px;
+        }
+        ul.inbox li a.user:hover > span {
+            box-shadow: 0 0 5px #CCC;
+        }
+        ul.inbox li a span.msgUserProfilePic:before {
+            display: block;
+            content: "";
+        }
+        /*selecting different profile pic*/
+            .msgUser1ProfilePic {
+                background: url('../images/all_faces.jpg') -68px -255px no-repeat;
+            }
+            .msgUser2ProfilePic {
+                background: url('../images/all_faces.jpg') -70px -10px no-repeat;
+            }
+            .msgUser3ProfilePic {
+                background: url('../images/all_faces.jpg') -68px -72px no-repeat;
+            }
+            .msgUser4ProfilePic {
+                background: url('../images/all_faces.jpg') -14px -135px no-repeat;
+            }
+        ul.inbox li.msg {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ebebeb;
+        }
+        ul.inbox li.msg a {
+            margin-bottom: 10px;
+            display: block;
+            font-size: 12px;
+            color: #666666;
+        }
+        ul.inbox li.msg a:hover {
+            color: #222222;
+        }
+        ul.inbox li span.timeAgo {
+            display: block;
+            font-size: 11px;
+            color: #aaaaaa;
+            margin-bottom: 5px;
+        }
+
+/*===========================================================*/
+    /*footer css*/
+    #footer {
+        font-size: 12px;
+        background: #353535;
+        color: #888888;
+        min-height: 120px;
+    }
+    #footer .footerWrapper {
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footerWrapper ul.footerNav {
+        line-height: 40px;
+    }
+    .footerWrapper ul.footerNav li {
+        display: inline-block;
+        margin-right: 7px;
+    }
+    .footerWrapper ul.footerNav li:after {
+        content: "|";
+    }
+    .footerWrapper ul.footerNav li a {
+        margin-right: 7px;
+        color: #d9d9d9;
+    }    
+    .footerWrapper ul.footerNav li:last-child,
+    .footerWrapper ul.footerNav li:last-child:after,
+    .footerWrapper ul.footerNav li:last-child:after a{
+        content: none;
+        margin-right: 0;
+    }
+    .footerWrapper span {
+        text-align: center;
+    }
