@@ -53,11 +53,10 @@ ul.ratting li {
     width: 15px;
  }
 ul.ratting li.active {
-    background: url('../images/ratting.png') no-repeat;
-    /*background: url('../images/sprite.png') -90px -84px  no-repeat;*/
+	background: url('../images/sprite.png') -90px -84px  no-repeat;
 }
 ul.ratting li {
-    background: url('../images/ratting.png') -15px no-repeat;
+    background: url('../images/sprite.png') -60px -84px  no-repeat
 }
 /*ratting ends*/
 /*header styling*/
