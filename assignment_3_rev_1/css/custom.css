@@ -241,6 +241,17 @@ ul.ratting li {
 	    	display: block;
 	    	color: #000;
 	    }
+  /*
+	    .userInfo a.userType i.left {
+	    	background: url('../images/sprite.png') -200px 0 no-repeat;
+	    	height: 20px;
+	    	width: 30px;
+	    }
+	    .userInfo a.userType i.repeat {
+	    	background: url('../images/sprite.png') 0 -200px repeat;
+			height: 20px;
+			width: 10px;
+}*/	    
 	    #profile .info {
 	    	margin-right: 20px;
 	    	float: left;
@@ -557,15 +568,11 @@ ul.ratting li {
         float: left;
         line-height: 50px;
     }
-	.headMessage h2:before {
-        background: url('../images/messages.gif') no-repeat;
-        float: left;
-        content: "";
-        margin-right: 5px;
-        width: 40px;
+    .headMessage h2 i {
+    	width: 40px;
         height: 40px;
-        margin-top: 5px;
-        margin-left: -4px;
+        float: left;
+        background: url('../images/sprite.png') -95px -107px no-repeat
     }
     .headMessage h5.newMsg {
         line-height: 38px;
