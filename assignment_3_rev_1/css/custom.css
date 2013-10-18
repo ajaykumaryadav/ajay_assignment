@@ -198,6 +198,9 @@ ul.ratting li {
 	    	height: 100px;
 	    	border-radius: 100px;
 	    }
+	    #findUser a.profilePic:hover > img {
+	    	box-shadow: 0 0 5px #666;
+	    }
 	    #profile #findUser .social a{
 	    	color: #FFF;
 	    	position: absolute;
