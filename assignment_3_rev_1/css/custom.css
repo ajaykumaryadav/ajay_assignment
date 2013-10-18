@@ -314,7 +314,7 @@ ul.ratting li {
 }
 .informationWrapper h2 {
 	border-bottom: 1px solid #ebebeb;
-	/*padding-bottom: 12px;*/
+	padding-bottom: 10px;
 	margin-bottom: 10px;
 	font-size: 24px;
 	font-family: robotobold;
@@ -408,7 +408,7 @@ ul.ratting li {
 
     /*education history start*/
     #education {
-    	margin-bottom: 20px;
+    	margin-bottom: 25px;
     }
     #education h2 i {
    		float: left;
@@ -453,6 +453,7 @@ ul.ratting li {
     #reviews .head h2 {
     	float: left;
     	border-bottom: none;
+    	padding-bottom: 0;
     }
     #reviews .head .pager {
     	float: right;
@@ -585,6 +586,9 @@ ul.ratting li {
 		margin-bottom: 10px;
 		display: inline-block;
     }
+    #inbox h5.day:hover {
+    	cursor:default;
+    }
     #inbox i.line {
     	background: url('../images/msgSeprator.png') no-repeat;
         opacity: 0.15;
@@ -601,7 +605,6 @@ ul.ratting li {
 		border-bottom: 1px solid #ebebeb;
     }
     #inbox a.user {
-    	display: block;
         height: 34px;
         line-height: 34px;
         color: #222222;
