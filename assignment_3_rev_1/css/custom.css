@@ -75,7 +75,7 @@ ul.ratting li {
 		background: url('../images/logo.png') no-repeat;
 		width: 138px;
 		height: 40px;
-		float: left;
+		display: inline-block;
 		margin-right: 80px;
 		margin-left: 12px;
 	}
@@ -321,7 +321,7 @@ ul.ratting li {
         float: left;
     }
     .address {
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
    .address span {
         color: #666666;
@@ -329,7 +329,7 @@ ul.ratting li {
         font-size: 14px;
         float: left;
         width: 300px;
-        margin-bottom: 15px;
+        margin-bottom: 8px;
     }
     .address span.userWebsite a{
         color: #dd4422;
@@ -457,6 +457,8 @@ ul.ratting li {
     	display: block;
     	float: left;
     	text-indent: -9999px;
+    	width: 20px;
+		margin-right: 10px;
     }
     .head .pager a.prevPage {
         background: url('../images/leftArrow.png') no-repeat;
@@ -598,6 +600,9 @@ ul.ratting li {
         height: 34px;
         line-height: 34px;
         color: #222222;
+    }
+    #inbox a.user:hover >img {
+    	box-shadow: 0 0 5px #CCC;
     }
     #inbox a.user img.userPic {
         width: 34px;
