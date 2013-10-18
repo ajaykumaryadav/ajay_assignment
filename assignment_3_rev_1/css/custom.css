@@ -17,13 +17,30 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	clear: both;
 }
 /*basic properties*/
-body {
+html {
 	font-family: arial;
 	background: #f3f3f3;
 }
 a {
 	text-decoration: none;
+	color: #666666;
+}
+a:hover {
 	color: #444444;
+}
+h5 {
+    font-size: 11px;
+    color: #666666;
+}
+    /*block with border radius n ol find out is it common for education aor job history*/
+.blockSummary {
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 5px #d9d9d9;
+    width: 292px;
+}
+/*last block poperty reset like margin right n ol*/
+.lastBlock {
 }
 /*ratting stars using css*/
 ul.ratting {
@@ -60,7 +77,7 @@ ul.ratting li {
 		height: 40px;
 		display: block;
 		float: left;
-		margin-right: 138px;
+		margin-right: 80px;
 		margin-left: 12px;
 	}
 	#navWrapper {
@@ -91,11 +108,37 @@ ul.ratting li {
 			text-transform: capitalize;
 		}
 		#navWrapper ul.baseNav {
-			margin-bottom: 11px;
+			margin-bottom: 6px;
 		}
 		#navWrapper ul.baseNav li {
 			margin-right: 30px;
 		}
+		#navWrapper ul.baseNav a i {
+			display: block;
+			float: left;
+			margin-top: 3px;
+            margin-right: 10px;
+            width: 16px;
+            height: 20px;
+		}
+		ul.baseNav a i.dashboard {
+			background: url('../images/sprite.png') 0 0 no-repeat;
+		}
+		ul.baseNav a i.jobs {
+			background: url('../images/sprite.png') -30px 0 no-repeat;
+		}
+		ul.baseNav a i.translator {
+			background: url('../images/sprite.png') -55px -28px no-repeat;
+		}
+		ul.baseNav a i.language {
+			background: url('../images/sprite.png') -90px 0 no-repeat;
+		}
+		ul.baseNav a i.teams {
+			background: url('../images/sprite.png') -120px 0 no-repeat;
+		}
+
+
+
 		#navWrapper ul.baseNav li.last {
 			margin: 0;
 		}
@@ -104,6 +147,10 @@ ul.ratting li {
 			color: #666666;
 			font-size: 13px;
 			font-family: robotobold;
+		}
+		#navWrapper ul.baseNav a:hover,
+		#navWrapper ul.baseNav a.active {
+			color: #444444;
 		}
 /* content start */
 #content {
@@ -119,7 +166,8 @@ ul.ratting li {
 	#content .leftCol {
 		width: 680px;
 		float:left;
-		box-shadow: 0 4px 4px #ebebeb;
+		box-shadow: 2px 0 4px #e0dfdf;
+		margin-right: 20px;
 	}
 		#profile {
 			background: #FFF;
@@ -138,7 +186,8 @@ ul.ratting li {
 	    }
 	    #profile #findUser a.profilePic {
 	    	display: block;
-	    	text-indent: -9999px;
+	    }
+	    #findUser a.profilePic img {
 	    	border: 5px solid #2f2f2f;
 	    	width: 105px;
 	    	height: 100px;
@@ -150,22 +199,39 @@ ul.ratting li {
 			height: 16px;
 			width: 16px;
 			text-indent: -10000px;
-			display: block;	    	
+			display: block;
+			transition:all .4s;   	
 	    }
-	    #profile #findUser .social a.twitter {
+	    #findUser .social a.twitter {
 	     	background: url('../images/twitter.png') no-repeat;
 	     	top: 60px;
 			left: 104px;
 	    }
-	    #profile #findUser .social a.facebook {
+	    #findUser .social a.twitter:hover {
+	    	top: 58px;
+	    }
+	    #findUser .social a.facebook {
 	        background: url('../images/facebook.png') no-repeat;
 	        top: 80px;
 			left: 92px;
 	    }
-	    #profile #findUser .social a.linkedin {
+	    #findUser .social a.facebook:hover {
+	    	top: 78px;
+	    }
+	    #findUser .social a.linkedin {
 	        background: url('../images/linkedin.png') no-repeat;
 	        top: 93px;
 			left: 75px;
+	    }
+	    #findUser .social a.linkedin:hover {
+	    	top: 91px;
+	    }
+	    .userInfo a.userType{
+	    	background: url('../images/band.png');
+	    	width: 115px;
+	    	height: 20px;
+	    	display: block;
+	    	color: #000;
 	    }
 	    #profile .info {
 	    	margin-right: 20px;
@@ -195,25 +261,25 @@ ul.ratting li {
 	    #profile .info span.exp {
 	    	line-height: 16px;
 	    }
-	    #profile .review {
+	    #profile .userReview {
 	    	float: right;
 	    }
-	    #profile .review span {
+	    #profile .userReview span {
 	    	display: block;
 	    	color: #bbbbbb;
 	    }
-	    #profile .review span.recommended {
+	    #profile .userReview span.recommended {
 	    	font-size: 13px;
 	    	margin-bottom: 30px;
 	    }
-	    #profile .review span.recommended strong {
+	    #profile .userReview span.recommended strong {
 	    	font-size: 18px;
 	    }
-	    #profile .review span.upgrade {
+	    #profile .userReview span.upgrade {
 	    	float: right;
 	    	margin-bottom: 20px;
 	    }
-	    #profile .review span.upgrade a {
+	    #profile .userReview span.upgrade a {
     		background: -webkit-linear-gradient(top, #515151, #383838 50%);
         	background: -moz-linear-gradient(top, #515151, #383838 50%);
     		border-radius: 3px;
@@ -221,9 +287,13 @@ ul.ratting li {
         	color: #FFF;
         	text-align: center;
         	font-size: 14px;
-        	padding: 5px 10px;        		    	
+        	padding: 5px 10px; 
 	    }
-	    #profile .review span.upgradePrice {
+	    #profile .userReview span.upgrade a:hover {
+    		background: -webkit-linear-gradient(top, #383838, #515151 50%);
+        	background: -moz-linear-gradient(top, #383838, #515151 50%);
+        }
+	    #profile .userReview span.upgradePrice {
 	    	font-size: 12px;
 	    	font-family: robotobold;
         	float: right;
@@ -235,6 +305,15 @@ ul.ratting li {
 .informationWrapper {
 	margin: 0 35px;
 }
+.informationWrapper h2 {
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 12px;
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-family: robotobold;
+	color: #444444;
+}
+
 .informationWrapper .address {
         border-bottom: 1px solid #ebebeb;
         float: left;
@@ -258,37 +337,321 @@ ul.ratting li {
     .address span:first-child {
         width: 100%;
     }
-
-    /*placing images before mobile n ol */
-    ul.address li:before {
-        float:left;
-        content:"";
+    /*placing images for address*/
+    .address i {
+		float: left;
+        margin-right: 10px;
         width: 20px;
-        height: 15px;
-        padding-left: 10px;
+        height: 25px;
+	}
+    .homeAddress i{
+    	background: url('../images/sprite.png') 0 -52px no-repeat;
     }
-    ul.address li.homeAddress:before {
-        background: url('../images/address.gif') no-repeat;
+    .mobile i{
+    	background: url('../images/sprite.png') -30px -52px no-repeat;
     }
-    ul.address li.mobile:before {
-        background: url('../images/mobile.gif') no-repeat;
+    .fax i{
+    	background: url('../images/sprite.png') -60px -52px no-repeat;
     }
-    ul.address li.fax:before {
-        background: url('../images/fax.png') no-repeat;
+    .emailid i{
+    	background: url('../images/sprite.png') -90px -52px no-repeat;
     }
-    ul.address li.emailid:before {
-        background: url('../images/email.gif') no-repeat;
+    .website i{
+    	background: url('../images/sprite.png') -120px -52px no-repeat;
     }
-    ul.address li.userWebsite:before {
-        background: url('../images/website.gif') no-repeat;
+/*job history warpper for jobs*/
+    #jobHistory {
     }	    
+   		#jobHistory h2 i {
+   			float: left;
+        	margin-right: 10px;
+        	width: 40px;
+        	height: 40px;
+   			background: url('../images/sprite.png') 0 -115px no-repeat;
+   		}
+	    #jobHistory ul.job {
+	    	padding-bottom: 12px;
+			border-bottom: 1px solid #f0f0f0;
+			margin-bottom: 12px;
+	    }
+	    #jobHistory ul.job li.position {
+	    	font-size: 18px;
+			line-height: 30px;
+			font-weight: bold;
+			color: #444444;
+	    }
+	    #jobHistory ul.job li.jobLocation {
+	    	font-size: 14px;
+			line-height: 25px;
+			color: #444444;
+	    }
+	    #jobHistory ul.job li.timePeriod {
+	    	font-size: 11px;
+			color: #aaaaaa;
+			line-height: 20px;
+			margin-bottom: 8px;
+	    }
+	    #jobHistory ul.job li.summary {
+	    	font-size: 12px;
+			color: #888888;
+			line-height: 20px;
+	    }
+    /*job history end*/
+
+    /*education history start*/
+    #education {
+    	margin-bottom: 20px;
+    }
+    #education h2 i {
+   		float: left;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+   		background: url('../images/sprite.png') -45px -115px no-repeat;
+   	}
+    #education .eduSummary {
+    	float: left;
+    	margin-right: 20px;
+    }
+    #education .lastBlock {
+    	margin-right: 0;
+    }
+    #education .eduSummary ul{
+    	padding: 15px;
+    	color: #444444;
+    }
+    #education .eduSummary ul li:nth-child(1) {
+    	font-size: 18px;
+		font-weight: bold;
+    }
+    #education .eduSummary ul li:nth-child(2) {
+    	font-size: 14px;
+		line-height: 25px;
+    }
+    #education .eduSummary ul li:nth-child(3) {
+    	font-size: 11px;
+		color: #aaaaaa;
+    }
+    /*education history end*/
+
+    /*user reviews start*/
+    #reviews {
+    	margin-bottom: 15px;
+    }
+    #reviews .head {
+    	border-bottom: 1px solid #ebebeb;
+    	margin-bottom: 15px;
+    }
+    #reviews .head h2 {
+    	float: left;
+    	border-bottom: none;
+    }
+    #reviews .head .pager {
+    	float: right;
+    	padding-top: 18px;
+    }
+    #reviews .head .pager a {
+    	display: block;
+    	float: left;
+    	text-indent: -9999px;
+    }
+    .head .pager a.prevPage {
+        background: url('../images/leftArrow.png') no-repeat;
+    }
+    #reviews .head a.nextPage {
+        background: url('../images/rightArrow.png') no-repeat;
+    }
+    #reviews .userReviews{
+
+    }
+    .usersReviews .review {
+		float: left;
+		margin-bottom: 18px;
+		margin-right: 20px;
+    }
+    .usersReviews .lastBlock {
+    	margin-right: 0;
+    }
+    #reviews .review .user {
+    	margin-bottom: 2px;
+		border-bottom: 1px solid #ebebeb;
+		padding-bottom: 8px;
+		margin: 8px 5px 0 8px;
+    }
+    #reviews a.reviewerPic {
+		float: left;
+		margin-right: 8px;
+    }
+    #reviews a.reviewerPic img {
+    	border: 1px solid #c0c0c0;
+		border-radius: 60px;
+		height: 59px;
+		width: 59px;
+    }
+    #reviews .user .names{
+    	float: left;
+    	margin-right: 5px;
+    }
+    #reviews .user .infoWrap {
+    	padding-top: 15px;
+    }
+    	.infoWrap a.name {
+    		font-size: 16px;
+			color: #222222;
+    	}
+    	.infoWrap a.positionComp {
+	    	display: block;
+    		font-size: 12px;
+    		color: #666666;
+    	}
+    .review .userReviewComment {
+    	padding-bottom: 8px;
+		margin: 8px 5px 0 8px;
+    }
+    .review .userReviewComment h3 {
+    	font-size: 14px;
+		color: #444444;
+    }
+    .review .userReviewComment span {
+    	color: #888888;
+		font-size: 12px;
+		float: none;
+    }
+    .userReviewComment span a{
+        color: #dd4422;
+		font-size: 11px;	
+    }
 
 
 
-    
 	/*leftCol end*/
 	#content .rightCol {
 		width: 232px;
 		float:left;
-		padding: 0 30px 0 18px;
+		.padding: 0 30px 0 18px;
 	}
+
+	.headMessage {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.headMessage h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: -1px;
+        color: #dd4422;
+        float: left;
+        line-height: 50px;
+    }
+	.headMessage h2:before {
+        background: url('../images/messages.gif') no-repeat;
+        float: left;
+        content: "";
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: -4px;
+    }
+    .headMessage h5.newMsg {
+        line-height: 38px;
+        float: right;
+        background: none;
+        text-transform: uppercase;
+        font-size: 
+    }
+    .headMessage h5 em {
+        margin-left: 5px;
+        color: #FFF;
+        padding: 4px 8px;
+        border-radius: 20px;
+        background: #dd4422;
+    }
+    #inbox h5.day {
+    	text-transform: uppercase;
+		padding: 2px 2px 1px 3px;
+		background: #e5e5e5;
+		border-radius: 2px;
+		margin-bottom: 10px;
+		display: inline-block;
+    }
+    #inbox i.line {
+    	background: url('../images/msgSeprator.png') no-repeat;
+        opacity: 0.15;
+        height: 10px;
+        width: 200px;
+        display: block;
+        margin-left: -20px;
+    }
+    #inbox ul {
+    	margin-bottom: 30px;
+    }
+    #inbox ul li {
+    	margin-bottom: 15px;
+		border-bottom: 1px solid #ebebeb;
+    }
+    #inbox a.user {
+    	display: block;
+        height: 34px;
+        line-height: 34px;
+        color: #222222;
+    }
+    #inbox a.user img.userPic {
+        width: 34px;
+        height: 34px;
+        float: left;
+        margin-right: 10px;
+        border-radius: 45px;    	
+    }
+    #inbox .msg {
+    	margin-bottom: 10px;
+    }
+    #inbox .msg a{
+		font-size: 12px;
+		color: #666666;
+    }
+    #inbox .msg a:hover {
+    	color: #222222;
+    }
+    #inbox .timeAgo {    	
+		font-size: 11px;
+		color: #aaaaaa;
+		margin-bottom: 5px;	
+    }
+
+/*===========================================================*/
+    /*footer css*/
+    #footer {
+        font-size: 12px;
+        background: #353535;
+        color: #888888;
+        min-height: 120px;
+    }
+    #footer .footerWrapper {
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footerWrapper ul.footerNav {
+        line-height: 40px;
+    }
+    .footerWrapper ul.footerNav li {
+        display: inline-block;
+        margin-right: 7px;
+    }
+    .footerWrapper ul.footerNav li:after {
+        content: "|";
+    }
+    .footerWrapper ul.footerNav li a {
+        margin-right: 7px;
+        color: #d9d9d9;
+    }    
+    .footerWrapper ul.footerNav li:last-child,
+    .footerWrapper ul.footerNav li:last-child:after,
+    .footerWrapper ul.footerNav li:last-child:after a{
+        content: none;
+        margin-right: 0;
+    }
+    .footerWrapper span {
+        text-align: center;
+    }
