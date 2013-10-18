@@ -75,7 +75,6 @@ ul.ratting li {
 		background: url('../images/logo.png') no-repeat;
 		width: 138px;
 		height: 40px;
-		display: block;
 		float: left;
 		margin-right: 80px;
 		margin-left: 12px;
@@ -186,6 +185,7 @@ ul.ratting li {
 	    }
 	    #profile #findUser a.profilePic {
 	    	display: block;
+	    	margin-bottom: 10px;
 	    }
 	    #findUser a.profilePic img {
 	    	border: 5px solid #2f2f2f;
@@ -236,6 +236,7 @@ ul.ratting li {
 	    #profile .info {
 	    	margin-right: 20px;
 	    	float: left;
+	    	max-width: 300px;
 	    }
 	    #profile .info span {
 	    	display: block;
@@ -263,6 +264,7 @@ ul.ratting li {
 	    }
 	    #profile .userReview {
 	    	float: right;
+	    	max-width: 250px;
 	    }
 	    #profile .userReview span {
 	    	display: block;
@@ -361,6 +363,7 @@ ul.ratting li {
     }
 /*job history warpper for jobs*/
     #jobHistory {
+    	margin-bottom: 40px;
     }	    
    		#jobHistory h2 i {
    			float: left;
