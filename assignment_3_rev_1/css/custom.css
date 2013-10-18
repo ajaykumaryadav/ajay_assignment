@@ -314,7 +314,7 @@ ul.ratting li {
 }
 .informationWrapper h2 {
 	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 12px;
+	/*padding-bottom: 12px;*/
 	margin-bottom: 10px;
 	font-size: 24px;
 	font-family: robotobold;
