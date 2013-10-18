@@ -27,6 +27,7 @@ a {
 }
 a:hover {
 	color: #444444;
+	text-shadow:1px 1px 1px #CCC;
 }
 h5 {
     font-size: 11px;
@@ -105,6 +106,10 @@ ul.ratting li {
 		}
 		#navWrapper ul.topNav a {
 			text-transform: capitalize;
+			color: #444;
+		}
+		#navWrapper ul.topNav a:hover {
+			text-shadow:1px 1px 1px #CCC;
 		}
 		#navWrapper ul.baseNav {
 			margin-bottom: 6px;
@@ -602,7 +607,7 @@ ul.ratting li {
         color: #222222;
     }
     #inbox a.user:hover >img {
-    	box-shadow: 0 0 5px #CCC;
+    	box-shadow: 0 0 5px #444;
     }
     #inbox a.user img.userPic {
         width: 34px;
