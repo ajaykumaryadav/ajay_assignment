@@ -151,6 +151,7 @@ ul.ratting li {
 			color: #666666;
 			font-size: 13px;
 			font-family: robotobold;
+			display: block;
 		}
 		#navWrapper ul.baseNav a:hover,
 		#navWrapper ul.baseNav a.active {
