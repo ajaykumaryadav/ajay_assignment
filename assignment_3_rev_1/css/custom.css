@@ -121,9 +121,9 @@ ul.ratting li {
 			display: block;
 			float: left;
 			margin-top: 3px;
-            margin-right: 10px;
-            width: 16px;
-            height: 20px;
+            		padding-right: 10px;
+            		width: 16px;
+            		height: 20px;
 		}
 		ul.baseNav a i.dashboard {
 			background: url('../images/sprite.png') 0 0 no-repeat;
