@@ -193,17 +193,17 @@ ul.ratting li {
 	    	margin-right: 25px;
 	    	position: relative;
 	    }
-		    #findUser a.profilePic {
+		    .profilePic {
 		    	display: block;
 		    	margin-bottom: 10px;
 		    }
-		    #findUser a.profilePic img {
+		    .profilePic img {
 		    	border: 5px solid #2f2f2f;
 		    	width: 100px;
 		    	height: 100px;
 		    	border-radius: 55px;
 		    }
-		    #findUser .social a{
+		    .social a{
 		    	color: #FFF;
 		    	position: absolute;
 				height: 16px;
@@ -212,32 +212,32 @@ ul.ratting li {
 				display: block;
 				transition:all .4s;   	
 		    }
-		    #findUser .social a.twitter {
+		    .social a.twitter {
 		     	background: url('../images/sprite.png') -40px -160px  no-repeat;
 		     	top: 60px;
 				left: 100px;
 		    }
-		    #findUser .social a.twitter:hover {
+		    .social a.twitter:hover {
 		    	top: 58px;
 		    }
-		    #findUser .social a.facebook {
+		    .social a.facebook {
 		        background: url('../images/sprite.png') -20px -160px  no-repeat;
 		        top: 78px;
 				left: 90px;
 		    }
-		    #findUser .social a.facebook:hover {
+		    .social a.facebook:hover {
 		    	top: 76px;
 		    }
-		    #findUser .social a.linkedin {
+		    .social a.linkedin {
 		        background: url('../images/sprite.png') 0 -160px  no-repeat;
-		        top: 93px;
-				left: 75px;
+		        top: 91px;
+				left: 74px;
 		    }
-		    #findUser .social a.linkedin:hover {
+		    .social a.linkedin:hover {
 		    	top: 91px;
 		    }
 		    .userInfo a.userType {
-		    	display: block;
+		    	display: inline-block;
 		    }
 		    .userInfo a.userType span {
 		    	background: url('../images/sprite.png') 0 -180px no-repeat;
@@ -260,7 +260,7 @@ ul.ratting li {
 
 
 	    .info {
-	    	margin-right: 25px;
+	    	margin-right: 10px;
 	    	float: left;
 	    	max-width: 245px;
 	    }
@@ -450,6 +450,7 @@ ul.ratting li {
     #education li.eduSummary span:nth-child(1) {
     	font-size: 18px;
 		font-weight: bold;
+		text-transform: capitalize;
     }
     #education li.eduSummary span:nth-child(2) {
     	font-size: 14px;
@@ -503,10 +504,9 @@ ul.ratting li {
     	margin-right: 0;
     }
     #reviews .review .user {
-    	margin-bottom: 2px;
+    	margin-bottom: 8px;
 		border-bottom: 1px solid #ebebeb;
 		padding-bottom: 8px;
-		.margin: 8px 5px 0 8px;
     }
     li.review .user .ratting {
     	margin-top: 15px;
@@ -518,14 +518,14 @@ ul.ratting li {
     }
     #reviews a.reviewerPic img {
     	border: 1px solid #c0c0c0;
-		border-radius: 60px;
+		border-radius: 30px;
 		height: 58px;
 		width: 58px;
     }
     #reviews .user .names {
     	padding-top: 15px;
     	float: left;
-    	margin-right: 5px;
+    	margin-right: 10px;
     }
     	.names a.name {
     		font-size: 16px;
@@ -540,8 +540,7 @@ ul.ratting li {
     		margin-right: 5px;
     	}
     .review .userReviewComment {
-    	padding-bottom: 8px;
-		margin: 8px 5px 0 8px;
+		margin: 0 8px 8px 8px;
     }
     .review .userReviewComment h3 {
     	font-size: 14px;
@@ -564,8 +563,7 @@ ul.ratting li {
 	}
 
 	.headMessage {
-		margin-top: 20px;
-		margin-bottom: 10px;
+		margin: 20px 0;
 	}
 	.headMessage h2 {
         text-transform: uppercase;
@@ -591,12 +589,12 @@ ul.ratting li {
         margin-left: 5px;
         color: #FFF;
         padding: 4px 8px;
-        border-radius: 20px;
+        border-radius: 11px;
         background: #dd4422;
     }
     #inbox h5.day {
     	text-transform: uppercase;
-		padding: 2px 2px 1px 3px;
+		padding: 2px 3px;
 		background: #e5e5e5;
 		border-radius: 2px;
 		margin-bottom: 10px;
@@ -616,7 +614,8 @@ ul.ratting li {
     	margin-bottom: 30px;
     }
     #inbox ul li {
-    	margin-bottom: 15px;
+    	margin-bottom: 12px;
+    	padding-bottom:12px;
 		border-bottom: 1px solid #ebebeb;
     }
     #inbox .userPicName {
@@ -636,7 +635,7 @@ ul.ratting li {
         height: 34px;
         float: left;
         margin-right: 10px;
-        border-radius: 34px;    	
+        border-radius: 17px;
     }
     #inbox .msg {
     	margin-bottom: 10px;
