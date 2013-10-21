@@ -552,9 +552,9 @@ ul.ratting li {
 
 	/*leftCol end*/
 	#content .rightCol {
-		width: 232px;
-		float:left;
-		.padding: 0 30px 0 18px;
+		max-width: 230px;
+		float: left;
+		margin-right: 30px;
 	}
 
 	.headMessage {
@@ -615,10 +615,14 @@ ul.ratting li {
     	margin-bottom: 15px;
 		border-bottom: 1px solid #ebebeb;
     }
+    #inbox .userPicName {
+    	height: 34px;
+    	margin-bottom: 5px;
+    }
     #inbox a.user {
-        height: 34px;
         line-height: 34px;
         color: #222222;
+        display: inline-block;
     }
     #inbox a.user:hover >img {
     	box-shadow: 0 0 5px #444;
@@ -628,7 +632,7 @@ ul.ratting li {
         height: 34px;
         float: left;
         margin-right: 10px;
-        border-radius: 45px;    	
+        border-radius: 34px;    	
     }
     #inbox .msg {
     	margin-bottom: 10px;
