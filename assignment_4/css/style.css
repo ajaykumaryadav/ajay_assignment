@@ -136,6 +136,10 @@ a {
 		color: #888888;
 		font-size: 15px;
 	}
+	#mainContent {
+		width: 750px;
+		float: left;		
+	}
 
 	#content .tile {
 		width: 220px;
@@ -145,6 +149,9 @@ a {
 		margin-bottom: 18px;
 		float: left;
 		margin-right: 25px;
+	}
+	#content .rowLastTile {
+		margin-right: 0;
 	}
 		#content .tile .tileHead {
 			padding: 6px;
@@ -267,4 +274,11 @@ a {
 	}
 
 /*==========================================================*/
-
+.adds {
+	float: left;
+	width: 190px;
+}
+.adds img {
+	width: 190px;
+	margin-bottom: 20px;
+}
