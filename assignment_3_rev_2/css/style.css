@@ -496,6 +496,8 @@ ul.ratting li {
     	float: left;
     	border-bottom: none;
     	padding-bottom: 0;
+    	margin-bottom: 12px;
+    	line-height: normal;
     }
     #reviews .head .pager {
     	float: right;
