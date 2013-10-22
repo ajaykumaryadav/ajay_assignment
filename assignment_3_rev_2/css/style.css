@@ -266,6 +266,7 @@ ul.ratting li {
 	    	margin-right: 10px;
 	    	float: left;
 	    	max-width: 245px;
+	    	text-shadow: 0 0 1px rgba(0,0,0,.6);
 	    }
 		    .info span {
 		    	display: block;
