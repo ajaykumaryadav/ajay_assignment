@@ -14,14 +14,20 @@
 					<a href="#" class="logo" title="Langmart">Langmart</a>
 					<div id="navWrapper">
 						<ul class="topNav">
-							<li><a href="#" title="Messages">Messages</a></li>
-							<li><a href="#" title="Help">Help</a></li>
-							<li class="last"><a href="#" title="Logout" class="logout">Logout</a></li>
+							<li>
+								<a href="#" title="Messages">Messages</a>
+							</li>
+							<li>
+								<a href="#" title="Help">Help</a>
+							</li>
+							<li class="last">
+								<a href="#" title="Logout" class="logout">Logout</a>
+							</li>
 						</ul>
 						<div class="clearFix"></div>
 						<ul class="mainNav">
 							<li class="dashboard">
-								<a href="#" title="dashboard">
+								<a href="#" title="dashboard" class="active">
 									<i></i>
 									<span>dashboard</span>
 								</a>
@@ -59,7 +65,9 @@
 			</div>
 			<!--headerWrapper ends-->
 
+			<!--Page content start-->
 			<div id="content">
+
 				<!--leftCol is a wrapper for left side content-->
 				<div class="leftCol">
 					<div class="userBasicInfo">
@@ -115,18 +123,35 @@
 						<div class="clearFix"></div>
 					</div>
 					<!--userInfo end-->
-						
+					
+					<!--information wrapper start-->
 					<div class="informationWrapper">
 						<div class="address">
-							<span class="homeAddress"><i></i>400 s hill st, los angeles, albany 90013, Newyork</span>
-							<span class="mobile"><i></i>+91 400 528 2569</span>
-							<span class="fax"><i></i>+91 400 528 2569</span>
-							<span class="emailid"><i></i>
+							<div class="homeAddress  marginRight">
+								<i></i>
+								<span>400 s hill st, los angeles, albany 90013, Newyork</span>
+							</div>
+							<div class="mobile">
+								<i></i>
+								<span>+91 400 528 2569</span>
+							</div>
+							<div class="fax marginRight">
+								<i></i>
+								<span>+91 400 528 2569</span>
+							</div>
+							<div class="emailid">
+								<i></i>
 								<a href="mailto:anthoney.wastson@yopmail.com?Subject=Demo" target="_blank">
-									anthoney.wastson@yopmail.com</a>
-							</span>
-							<span class="userWebsite"><a href="#" title="langmart" class="website" target="_blank"><i></i>http://langmart.com</a></span>
-						<div class="clearFix"></div>
+									<span>anthoney.wastson@yopmail.com</span>
+								</a>
+							</div>
+							<div class="userWebsite  marginRight">
+								<a href="#" title="langmart" class="website" target="_blank">
+									<i></i>
+									<span>http://langmart.com</span>
+								</a>
+							</div>
+							<div class="clearFix"></div>
 						</div>
 						<!--user job history starts-->
 						<div id="jobHistory">
@@ -299,7 +324,7 @@
 							<span>Messages</span>
 						</h2>
 						<h5 class="newMsg" title="New Messages">
-							New! <em> 2 </em>
+							<span>New!</span><em> 2 </em>
 						</h5>
 						<div class="clearFix"></div>
 					</div>
