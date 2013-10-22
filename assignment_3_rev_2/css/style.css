@@ -36,6 +36,7 @@ h5 {
 .blockSummary {
     border-radius: 5px;
     box-shadow: 0 0 3px #d9d9d9;
+    border: 1px solid #d9d9d9;
 }
 /*ratting stars using css*/
 ul.ratting {
@@ -458,7 +459,7 @@ ul.ratting li {
     	margin-right: 0;
     }
     #education li .eduSummary{
-    	padding: 15px;
+    	padding: 14px;
     	color: #444444;
     	margin-bottom: 20px;
     }
@@ -515,7 +516,7 @@ ul.ratting li {
 		float: left;
 		margin-bottom: 18px;
 		margin-right: 20px;
-		padding: 10px 0 10px 10px;
+		padding: 8px 0 8px 8px;
 		max-width: 285px;
     }
     .usersReviews li.lastBlock {
