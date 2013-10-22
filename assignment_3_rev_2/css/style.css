@@ -525,9 +525,9 @@ ul.ratting li {
     	margin-right: 0;
     }
     #reviews .review .user {
-    	margin-bottom: 8px;
+    	margin-bottom: 5px;
 		border-bottom: 1px solid #ebebeb;
-		padding-bottom: 8px;
+		padding-bottom: 5px;
     }
     li.review .user .ratting {
     	margin-top: 15px;
