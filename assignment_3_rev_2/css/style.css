@@ -611,7 +611,7 @@ ul.ratting li {
         border-radius: 11px;
         background: #dd4422;
     }
-    #inbox h5.day {
+    .inbox h5.day {
     	text-transform: uppercase;
 		padding: 2px 3px;
 		background: #e5e5e5;
@@ -620,53 +620,53 @@ ul.ratting li {
 		display: inline-block;
 		margin-left: 40px;
     }
-    #inbox .date {
+    .inbox .date {
     	margin-left: -40px;
     	background: url('../images/msgSeprator.png') no-repeat;
     	background-position: bottom;
     	padding-bottom: 5px;
     }
-    #inbox .date h5.day:hover {
+    .inbox .date h5.day:hover {
     	cursor:default;
     }
-    #inbox {
+    .inbox {
     	margin-bottom: 30px;
     }
-    #inbox ul li {
+    .inbox ul li {
     	margin-bottom: 12px;
     	padding-bottom:12px;
 		border-bottom: 1px solid #ebebeb;
     }
-    #inbox .userPicName {
+    .inbox .userPicName {
     	height: 34px;
     	margin-bottom: 5px;
     }
-    #inbox a.user {
+    .inbox a.user {
         line-height: 34px;
         color: #222222;
         display: inline-block;
     }
-    #inbox a.user:hover >img {
+    .inbox a.user:hover >img {
     	box-shadow: 0 0 5px #CCC;
     }
-    #inbox a.user img.userPic {
+    .inbox a.user img.userPic {
         width: 34px;
         height: 34px;
         float: left;
         margin-right: 10px;
         border-radius: 17px;
     }
-    #inbox .msg {
+    .inbox .msg {
     	margin-bottom: 10px;
     }
-    #inbox .msg a{
+    .inbox .msg a{
 		font-size: 12px;
 		color: #666666;
     }
-    #inbox .msg a:hover {
+    .inbox .msg a:hover {
     	color: #222222;
     }
-    #inbox .timeAgo {    	
+    .inbox .timeAgo {    	
 		font-size: 11px;
 		color: #aaaaaa;
 		margin-bottom: 5px;	
