@@ -35,7 +35,7 @@ h5 {
     /*block with border radius n ol find out is it common for education aor job history*/
 .blockSummary {
     border-radius: 5px;
-    box-shadow: 0 0 5px #d9d9d9;
+    box-shadow: 0 0 3px #d9d9d9;
 }
 /*ratting stars using css*/
 ul.ratting {
@@ -236,6 +236,9 @@ ul.ratting li {
 		    .social a.linkedin:hover {
 		    	top: 89px;
 		    }
+		    .userInfo .userType  {
+		    	max-width: 128px;
+		    }
 		    .userInfo .userType span {
 		    	background: url('../images/sprite.png') 0 -180px no-repeat;
 		    	height: 20px;
@@ -245,7 +248,7 @@ ul.ratting li {
 		    	padding-left: 5px;
 		    	float: left;
 		    	border-left: 1px solid #d35b17;
-		    	max-width: 128px;
+		    	max-width: 90px;
 		    }
 		    .userInfo .userType i {
 		    	float: left;
@@ -305,6 +308,7 @@ ul.ratting li {
 		    	margin-bottom: 20px;
 		    	background: -webkit-linear-gradient(top, #515151, #383838 50%);
 	        	background: -moz-linear-gradient(top, #515151, #383838 50%);
+	        	background: -ms-linear-gradient(top, #515151, #383838 50%);
 	    		border-radius: 3px;
 	    		box-shadow: 0 0 3px #000;
 	        	color: #FFF;
@@ -315,6 +319,7 @@ ul.ratting li {
 		    .userReview a.upgrade:hover {
 	    		background: -webkit-linear-gradient(top, #383838, #515151 50%);
 	        	background: -moz-linear-gradient(top, #383838, #515151 50%);
+	        	background: -ms-linear-gradient(top, #383838, #515151 50%);
 	        }
 		    .userReview span.upgradePrice {
 		    	font-size: 12px;
