@@ -349,6 +349,7 @@ ul.ratting li {
         border-bottom: 1px solid #ebebeb;
         margin-bottom: 34px;
 		padding-bottom: 18px;
+		word-wrap: break-word;
     }
     .address div {
         color: #666666;
