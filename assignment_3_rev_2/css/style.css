@@ -348,14 +348,14 @@ ul.ratting li {
 	.informationWrapper .address {
         border-bottom: 1px solid #ebebeb;
         margin-bottom: 34px;
-		padding-bottom: 24px;
+		padding-bottom: 18px;
     }
     .address div {
         color: #666666;
         text-transform: capitalize;
         font-size: 14px;
         width: 300px;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         float: left;
         margin-right: 10px;
     }
