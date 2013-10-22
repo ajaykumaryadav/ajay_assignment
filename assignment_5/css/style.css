@@ -1,0 +1,188 @@
+/*tags reset*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+/*Basic style*/
+body {
+	font-family: Arial;
+}
+a {
+	text-decoration: none;
+	color: #2255aa;
+	font-size: 12px;
+}
+.clear {
+	clear: both;
+}
+h3 {
+	font-size: 12px;
+	color: #2255aa;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+
+/*all wrapper*/
+.headerWrapper,
+#content {
+	width: 990px;
+	margin: auto;
+}
+
+/*header*/
+#header {
+	background: #d6e4ff;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #bbccff;
+}
+	#header a.logo {
+		height: 32px;
+		width: 134px;
+		text-indent: -9999px;
+		background: #f95f6a;
+		float: left;
+		margin: 22px 96px 20px 0;
+	}
+	#header .loc {
+		float: left;
+		margin-top: 10px;
+	}
+	#header .loc ul li {
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 5px;
+	}
+	#header .loc li.clear {
+		float: none;
+		margin: 0;
+	}
+	#header .loc li a {
+		font-weight: bold;
+		font-size: 14px;
+	}
+	#header form input[type=text] {
+		width: 362px;
+		line-height: 28px;
+		border: 1px solid #d2d5e9;
+		padding-right: 10px;
+	}
+	#header form input[type=submit] {
+		line-height: 28px;
+		width: 88px;
+		border: 1px solid #2255aa;
+		margin-left: -8px;
+		color: #FFF;
+		font-size: 14px;
+		background: #2255aa linear-gradient(rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.0) 80%);
+	}
+	#header .user {
+		float: right;
+		margin-top: 40px;
+	}
+	#header .user ul {
+		float: left;
+	}
+	#header .user ul li {
+		float: left;
+	}
+	#header .user ul li.last {
+		margin: 0;
+		padding: 0;
+	}
+	.user ul.userNav {
+		margin-right: 20px;
+	}
+	.user ul.userNav li{
+		margin-right: 16px;
+	}
+	.user ul.userNav a {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#header .user li.clear {
+		float: none;
+		margin: 0;
+	}
+	.user ul.social li {
+		margin-right: 5px;
+	}
+	.user ul.social a {
+		height: 21px;
+		width: 20px;
+		text-indent: -9999px;
+		background: #f95f6a;
+		float: left;
+	}
+/*Header end*/
+
+/*content start*/
+#content {
+	background: url('../images/bg.png') repeat-y;
+}
+
+/*about start (left col)*/
+.about {
+	width: 210px;
+	float: left;
+}
+	.about .logo {
+		border-bottom: 1px solid #e5e5ee;
+		margin-bottom: 18px;
+	}
+	.about .logo img {
+		width: 200px;
+		height: 170px;
+		margin-bottom: 9px;
+		background: #f95f6a;
+	}
+	.aboutSIMS ul {
+		margin-bottom: 20px;
+	}
+	.aboutSIMS ul li {
+		margin-bottom: 12px;
+	}
+	.aboutSIMS li h3 {
+		color: #000;
+		margin-bottom: 3px;
+	}
+	.aboutSIMS li a.readMore {
+		color: #959595;	
+	}
+
+	.aboutSIMS ul.moreAbout {
+		border-top: 1px solid #e5e5ee;
+	}
+	.aboutSIMS ul.moreAbout li {
+		border-bottom: 1px solid #e5e5ee;
+		margin-bottom:0;
+	}
+	.aboutSIMS ul.moreAbout a {
+		line-height: 28px;
+		display: block;
+	}
+	.aboutSIMS ul.moreAbout a i {
+		width: 16px;
+		height: 28px;
+		background: #f95f6a;
+		float: left;
+	}
+	.aboutSIMS ul.moreAbout a i.arrow {
+		width: 16px;
+		height: 28px;
+		background: #f95f6a;
+		float: right;
+	}
+/*about end (left col)*/
+
+/*activity start (middle col)*/
+.activity {
+	width: 500px;
+	float: left;
+}
+/*activity end (middle col)*/
+
+/*misc start (right col)*/
+.misc {
+	width: 280px;
+	float: left;
+}
+/*misc end (right col)*/
