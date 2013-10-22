@@ -196,6 +196,8 @@ ul.ratting li {
 		    .profilePic {
 		    	display: block;
 		    	margin-bottom: 10px;
+		    	height: 110px;
+				width: 110px;
 		    }
 		    .profilePic img {
 		    	border: 5px solid #2f2f2f;
@@ -342,24 +344,32 @@ ul.ratting li {
 }
 	.informationWrapper .address {
         border-bottom: 1px solid #ebebeb;
-        margin-bottom: 30px;
-		padding-bottom: 22px;
+        margin-bottom: 34px;
+		padding-bottom: 24px;
     }
-    .address span {
+    .address div {
         color: #666666;
         text-transform: capitalize;
         font-size: 14px;
         width: 300px;
         margin-bottom: 8px;
-        display: block;
         float: left;
+        margin-right: 10px;
     }
-    .address span.userWebsite a{
+    .address .marginRight {
+    	margin-right: 0;
+    }
+    .address .clearFix {
+    	float: none;
+    	margin: 0;
+    	padding: 0
+    }
+    .address .userWebsite a{
         color: #dd4422;
         text-transform: none;
         display: block;
     }
-    .address span:first-child {
+    .address .homeAddress {
         width: 100%;
     }
     /*placing images for address*/
@@ -391,9 +401,9 @@ ul.ratting li {
    		#jobHistory h2 i {
    			float: left;
         	margin-right: 10px;
-        	width: 35px;
-        	height: 35px;
-   			background: url('../images/sprite.png') 0 -120px no-repeat;
+        	width: 40px;
+        	height: 28px;
+   			background: url('../images/sprite.png') 0 -80px no-repeat;
    		}
 	    #jobHistory ul.job li {
 	    	padding-bottom: 12px;
@@ -618,7 +628,7 @@ ul.ratting li {
     #inbox .date h5.day:hover {
     	cursor:default;
     }
-    #inbox ul {
+    #inbox {
     	margin-bottom: 30px;
     }
     #inbox ul li {
