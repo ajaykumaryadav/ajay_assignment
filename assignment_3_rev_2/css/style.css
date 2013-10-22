@@ -74,7 +74,7 @@ ul.ratting li {
 	}
 	#navWrapper {
 		float: right;
-		margin-right: 8px;
+		margin-right: 10px;
 	}
 		/*
 		#navWrapper ul.topNav {
@@ -180,7 +180,7 @@ ul.ratting li {
 	#content .leftCol {
 		width: 680px;
 		float:left;
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 		.userBasicInfo {
 	    	background: #444444;
@@ -234,12 +234,9 @@ ul.ratting li {
 				left: 74px;
 		    }
 		    .social a.linkedin:hover {
-		    	top: 91px;
+		    	top: 89px;
 		    }
-		    .userInfo a.userType {
-		    	display: inline-block;
-		    }
-		    .userInfo a.userType span {
+		    .userInfo .userType span {
 		    	background: url('../images/sprite.png') 0 -180px no-repeat;
 		    	height: 20px;
 		    	color: #000;
@@ -250,7 +247,7 @@ ul.ratting li {
 		    	border-left: 1px solid #d35b17;
 		    	max-width: 128px;
 		    }
-		    .userInfo a.userType i {
+		    .userInfo .userType i {
 		    	float: left;
 		    	height: 20px;
 		    	width: 17px;
@@ -313,7 +310,7 @@ ul.ratting li {
 	        	color: #FFF;
 	        	text-align: center;
 	        	font-size: 14px;
-	        	padding: 5px 10px; 
+	        	padding: 5px 15px; 
 		    }
 		    .userReview a.upgrade:hover {
 	    		background: -webkit-linear-gradient(top, #383838, #515151 50%);
@@ -336,6 +333,7 @@ ul.ratting li {
 	font-size: 24px;
 	font-family: robotobold;
 	color: #444444;
+	line-height: 35px;
 }
 	.informationWrapper .address {
         border-bottom: 1px solid #ebebeb;
@@ -431,32 +429,37 @@ ul.ratting li {
         height: 28px;
    		background: url('../images/sprite.png') -40px -80px no-repeat;
    	}
-    #education li.eduSummary {
-    	float: left;
+   	#education li {
+    	float: left; 
+    }
+    #education li.clearFix {
+    	float: none;
+    }
+    #education li .eduSummary {
     	margin-right: 20px;
     	width: 265px;
     }
-    #education li.lastBlock {
+    #education li .lastBlock {
     	margin-right: 0;
     }
-    #education li.eduSummary{
+    #education li .eduSummary{
     	padding: 15px;
     	color: #444444;
     	margin-bottom: 20px;
     }
-    #education li.eduSummary span {
+    #education li .eduSummary span {
     	display: block;
     }
-    #education li.eduSummary span:nth-child(1) {
+    #education li .eduSummary span:nth-child(1) {
     	font-size: 18px;
 		font-weight: bold;
 		text-transform: capitalize;
     }
-    #education li.eduSummary span:nth-child(2) {
+    #education li .eduSummary span:nth-child(2) {
     	font-size: 14px;
 		line-height: 25px;
     }
-    #education li.eduSummary span:nth-child(3) {
+    #education li .eduSummary span:nth-child(3) {
     	font-size: 11px;
 		color: #aaaaaa;
     }
@@ -477,7 +480,7 @@ ul.ratting li {
     }
     #reviews .head .pager {
     	float: right;
-    	padding-top: 18px;
+    	margin-top: 18px;
     }
     #reviews .head .pager a {
     	display: block;
@@ -559,7 +562,7 @@ ul.ratting li {
 	#content .rightCol {
 		max-width: 240px;
 		float: left;
-		margin-right: 30px;
+		margin-right: 20px;
 	}
 
 	.headMessage {
@@ -599,10 +602,10 @@ ul.ratting li {
 		border-radius: 2px;
 		margin-bottom: 10px;
 		display: inline-block;
-		margin-left: 20px;
+		margin-left: 40px;
     }
     #inbox .date {
-    	margin-left: -20px;
+    	margin-left: -40px;
     	background: url('../images/msgSeprator.png') no-repeat;
     	background-position: bottom;
     	padding-bottom: 5px;
