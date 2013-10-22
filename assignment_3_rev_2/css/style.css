@@ -546,6 +546,7 @@ ul.ratting li {
     	padding-top: 15px;
     	float: left;
     	margin-right: 10px;
+    	max-width: 110px;
     }
     	.names a.name {
     		font-size: 16px;
@@ -665,7 +666,7 @@ ul.ratting li {
 		color: #666666;
     }
     .inbox .msg a:hover {
-    	color: #222222;
+    	color: #444;
     }
     .inbox .timeAgo {    	
 		font-size: 11px;
