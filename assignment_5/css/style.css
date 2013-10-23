@@ -49,7 +49,7 @@ h2 {
 		height: 32px;
 		width: 134px;
 		text-indent: -9999px;
-		background: #f95f6a;
+		background: url('../images/sprite.png') 0 0 no-repeat;
 		float: left;
 		margin: 22px 96px 20px 0;
 	}
@@ -120,8 +120,17 @@ h2 {
 		height: 21px;
 		width: 20px;
 		text-indent: -9999px;
-		background: #f95f6a;
 		float: left;
+		transition:all .4s;
+	}
+	.user ul.social a:hover {
+		margin-top: -3px;
+	}
+	.user ul.social a.facebook {
+		background: url('../images/sprite.png') -24px -40px no-repeat;
+	}
+	.user ul.social a.twitter {
+		background: url('../images/sprite.png') 0 -40px no-repeat;
 	}
 /*Header end*/
 
@@ -141,9 +150,9 @@ h2 {
 		margin-bottom: 18px;
 	}
 	.about .logo img {
-		width: 200px;
-		height: 170px;
-		margin-bottom: 9px;
+		width: 118px;
+		height: 150px;
+		margin: 0 46px 20px 46px;
 		background: #f95f6a;
 	}
 	.aboutSIMS ul {
@@ -154,7 +163,7 @@ h2 {
 	}
 	.aboutSIMS li h3 {
 		color: #000;
-		margin-bottom: 3px;
+		margin-bottom: 0;
 	}
 	.aboutSIMS li a.readMore {
 		color: #959595;	
@@ -175,14 +184,54 @@ h2 {
 	.aboutSIMS ul.moreAbout a i {
 		width: 25px;
 		height: 28px;
-		background: #f95f6a;
+		background: url('../images/sprite.png') 0 -74px no-repeat;
 		float: left;
 	}
+		/*placing icons strat*/
+		ul.moreAbout a.faculty i {
+			background: url('../images/sprite.png') 0 -102px no-repeat;
+		}
+		ul.moreAbout a.infra i {
+			background: url('../images/sprite.png') 0 -130px no-repeat;
+		}
+		ul.moreAbout a.teaching i {
+			background: url('../images/sprite.png') 0 -158px no-repeat;
+		}
+		ul.moreAbout a.student i {
+			background: url('../images/sprite.png') 0 -186px no-repeat;
+		}
+		ul.moreAbout a.location i {
+			background: url('../images/sprite.png') 0 -214px no-repeat;
+		}
+		ul.moreAbout a.curriculum i {
+			background: url('../images/sprite.png') 0 -242px no-repeat;
+		}
+		ul.moreAbout a.global i {
+			background: url('../images/sprite.png') 0 -270px no-repeat;
+		}
+		ul.moreAbout a.corporate i {
+			background: url('../images/sprite.png') 0 -298px no-repeat;
+		}
+		ul.moreAbout a.alumni i {
+			background: url('../images/sprite.png') 0 -326px no-repeat;
+		}
+		ul.moreAbout a.board i {
+			background: url('../images/sprite.png') 0 -354px no-repeat;
+		}
+		ul.moreAbout a.placements i {
+			background: url('../images/sprite.png') 0 -382px no-repeat;
+		}
+
+		/*placing icon end*/
 	.aboutSIMS ul.moreAbout a i.arrow {
 		width: 16px;
 		height: 28px;
 		background: #f95f6a;
+		background: url('../images/sprite.png') -31px -72px no-repeat;
 		float: right;
+	}
+	.aboutSIMS ul.moreAbout a:hover i.arrow {
+		background: url('../images/sprite.png') -31px -100px no-repeat;
 	}
 /*about end (left col)*/
 
@@ -202,9 +251,9 @@ h2 {
 		border-right: 1px solid #FFF;
 		box-shadow: 1px 0 0 #f5f5f5;
 		width: 28px;
-		background: #f5f5f5;
 		display: block;
 		line-height: 90px;
+		background: #f5f5f5;
 	}
 	.activityWrapper li a.next {
 		border-left: 1px solid #FFF;
