@@ -137,6 +137,7 @@ h2 {
 /*content start*/
 #content {
 	background: url('../images/bg.png') repeat-y;
+	margin-bottom: 20px;
 }
 
 /*about start (left col)*/
@@ -306,3 +307,40 @@ h2 {
 		margin-right: 6px;
 	}
 /*misc end (right col)*/
+
+/*footer start*/
+#footer {
+	border-top: 1px solid #e5e5ee;
+	background: #f9f9fc;
+	min-height: 85px;
+}
+	.footerWrapper {
+		width: 990px;
+		margin: 15px auto;
+	}
+	.footerWrapper a {
+		font-size: 14px;
+	}
+	ul.footerNav,
+	ul.footerNav li,
+	ul.footer-links li {
+		float: left;
+	}
+	ul.footer-links {
+		float: right;
+	}
+	ul.footer-links a {
+		font-size: 12px;
+	}
+	ul.footerNav li,
+	ul.footer-links li {
+		margin-right: 16px;
+	}
+	ul.footer-links span {
+		color: #959595;
+		font-size: 12px;
+	}
+	ul.footerNav li.last,
+	ul.footer-links li.last {
+		margin: 0;
+	}
