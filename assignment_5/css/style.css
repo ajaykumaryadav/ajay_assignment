@@ -19,6 +19,17 @@ h3 {
 	font-weight: bold;
 	margin-bottom: 15px;
 }
+h2 {
+	color: #000;
+	font-size: 14px;
+	line-height: 30px;
+	background: #ccddff;
+	font-weight: bold;
+	padding-left: 10px;
+	border-bottom: 1px solid #FFF;
+	box-shadow: 0 1px 0 #ccddff;
+	margin-bottom: 10px;
+}
 
 
 /*all wrapper*/
@@ -123,6 +134,7 @@ h3 {
 .about {
 	width: 210px;
 	float: left;
+	margin-right: 20px;
 }
 	.about .logo {
 		border-bottom: 1px solid #e5e5ee;
@@ -157,10 +169,11 @@ h3 {
 	}
 	.aboutSIMS ul.moreAbout a {
 		line-height: 28px;
+		font-weight: bold;
 		display: block;
 	}
 	.aboutSIMS ul.moreAbout a i {
-		width: 16px;
+		width: 25px;
 		height: 28px;
 		background: #f95f6a;
 		float: left;
@@ -175,14 +188,62 @@ h3 {
 
 /*activity start (middle col)*/
 .activity {
-	width: 500px;
+	width: 460px;
 	float: left;
+	margin-right: 40px;
 }
+	.activityWrapper {
+	}
+	.activityWrapper ul li {
+		float: left;
+		margin-right: 10px;
+	}
+	.activityWrapper li a.prev {
+		border-right: 1px solid #FFF;
+		box-shadow: 1px 0 0 #f5f5f5;
+		width: 28px;
+		background: #f5f5f5;
+		display: block;
+		line-height: 90px;
+	}
+	.activityWrapper li a.next {
+		border-left: 1px solid #FFF;
+		box-shadow: -1px 0 0 #f5f5f5;
+		line-height: 90px;
+		width: 28px;
+		background: #f5f5f5;
+		display: block;
+	}
+
+	.activityWrapper ul li.last {
+		margin: 0;
+	}
+	.activityWrapper li img {
+		border: 1px solid #e5e5ee;
+		width: 118px;
+		height: 88px;
+	}
 /*activity end (middle col)*/
 
 /*misc start (right col)*/
 .misc {
-	width: 280px;
+	width: 260px;
 	float: left;
 }
+	.competing li {
+		margin-bottom: 10px;
+	}
+	.competing li a {
+		display: block;
+	}
+	.competing li a .clear {
+		clear: both;
+	}
+	.competing li a img {
+		height: 33px;
+		width: 33px;
+		float: left;
+		border: 1px solid #e5e5ee;
+		margin-right: 6px;
+	}
 /*misc end (right col)*/
