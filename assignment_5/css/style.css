@@ -154,20 +154,29 @@ h2 {
 		height: 150px;
 		margin: 10px 0 16px 36px;
 	}
+	.about .dean,
+	.about .motto {
+		margin-bottom: 12px;
+	}
+	.about .dean h3 ,
+	.about .motto h3 ,
+	.about .link h3 {
+		color: #000;
+		margin-bottom: 0;
+	}
+	.motto a.readMore {
+		color: #959595;	
+	}
+
+	.about .link {
+		margin-bottom: 20px;
+	}
 	.aboutSIMS ul {
 		margin-bottom: 20px;
 	}
 	.aboutSIMS ul li {
 		margin-bottom: 12px;
 	}
-	.aboutSIMS li h3 {
-		color: #000;
-		margin-bottom: 0;
-	}
-	.aboutSIMS li a.readMore {
-		color: #959595;	
-	}
-
 	.aboutSIMS ul.moreAbout {
 		border-top: 1px solid #e5e5ee;
 	}
