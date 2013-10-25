@@ -89,8 +89,9 @@ ul.nav li a.active {
 	box-shadow: 0 6px 6px -6px #bbbbbb;
 }
 .banner {
-	background: url('../images/captionBg.jpg') repeat-x;
-	height: 521px;
+	background: #333333;
+	box-shadow: inset 0 3px 6px #222;
+	min-height: 521px;
 }
 ul.block {
 	text-align: center;
@@ -114,6 +115,7 @@ ul.block li img {
 	padding: 30px 20px;
 	background: #ffffff;
 	margin-right: 20px;
+	margin-bottom: 10px;
 }
 .formBlock a {
 	color: #4390ce;
@@ -161,12 +163,13 @@ ul.features {
 	float: left;
 	margin: 0;
 	margin-left: 18px;
-	margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 ul.features li {
 	max-width: 280px;
 	margin-right: 40px;
 	float: left;
+	margin-bottom: 10px;
 }
 ul.features img {
 	border: 1px solid #dddddd;
@@ -188,7 +191,7 @@ ul.features p{
 ul.testimonials {
 	float: left;
 	margin: 0;
-	margin-left: 18px;
+	margin-left: 20px;
 }
 ul.testimonials li {
 	max-width: 280px;
