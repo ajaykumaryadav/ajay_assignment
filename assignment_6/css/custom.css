@@ -14,6 +14,7 @@ a {
 p {
 	color: #888888;
 	font-size: 13px;
+	text-align: justify;
 }
 h1,h2,h3 {
 	word-wrap:break-word;
@@ -57,8 +58,7 @@ a.logo{
 }
 ul.nav {
 	float: right;
-	margin-top: 14px;
-	margin-bottom: 16px;
+	margin: 15px 0;
 }
 ul.nav li {
 	float: left;
@@ -68,13 +68,17 @@ ul.nav li.clear {
 	float: none;
 	margin: 0;
 }
-ul.nav li:hover {
+ul.nav li a:hover,
+ul.nav li a.active {
 	background: #FFF;
+	color: #333333;
 }
 
 /*banner block*/
 .span960 {
 	width: 960px;
+}
+.rowMarginBottom {
 	margin-bottom: 35px;
 }
 .seprator {
@@ -88,7 +92,7 @@ ul.nav li:hover {
 ul.block {
 	text-align: center;
 	float: left;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 ul.block li{
 	float: left;
@@ -98,6 +102,9 @@ ul.block li{
 }
 ul.block li img {
 	margin-bottom: 5px;
+}
+.span8 p {
+	max-width: 600px;
 }
 .formBlock {
 	padding: 30px 20px;
@@ -202,14 +209,15 @@ ul.testimonials p{
 .signupBanner {
 	background: #eeeeee;
 	min-height: 90px;
-	padding-top: 20px;
 	text-align: center;
 	margin-left: 30px;
 }
-.signupBanner .btn-change {
+.signupBanner a.btn-change {
+	margin: 20px auto;
+	text-decoration: none;
+	display: block;
 	width: 298px;
-	height: 56px;
-	margin: auto;
+	padding: 15px 0;
 }
 .marginBottom {
 	margin-bottom: 0;
