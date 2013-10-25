@@ -1,6 +1,5 @@
 .container {
 	width: 960px;
-	.background: #CCC;
 }
 /*basic style*/
 ul li {
@@ -15,6 +14,9 @@ a {
 p {
 	color: #888888;
 	font-size: 13px;
+}
+h1,h2,h3 {
+	word-wrap:break-word;
 }
 h1 {
 	font-size: 48px;
@@ -51,6 +53,7 @@ a.logo{
 	text-indent: -9999px;
 	margin-top: 14px;
 	margin-left: 20px;
+	margin-bottom: 10px;
 }
 ul.nav {
 	float: right;
@@ -59,8 +62,14 @@ ul.nav {
 }
 ul.nav li {
 	float: left;
-	list-style: none;
 	margin-left: 25px;
+}
+ul.nav li.clear {
+	float: none;
+	margin: 0;
+}
+ul.nav li:hover {
+	background: #FFF;
 }
 
 /*banner block*/
@@ -140,7 +149,7 @@ ul.features {
 	float: left;
 	margin: 0;
 	margin-left: 18px;
-	margin-bottom: 60px;
+	margin-bottom: 70px;
 }
 ul.features li {
 	max-width: 280px;
@@ -155,7 +164,7 @@ ul.features a {
 	font-size: 18px;
 	text-decoration: none;
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 ul.features p{
 	color: #666666;
@@ -173,7 +182,7 @@ ul.testimonials li {
 	max-width: 280px;
 	margin-right: 40px;
 	float: left;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 ul.testimonials a {
 	font-size: 13px;
@@ -205,6 +214,7 @@ ul.testimonials p{
 .marginBottom {
 	margin-bottom: 0;
 }
+
 ul li.last {
 	margin: 0;
 }
